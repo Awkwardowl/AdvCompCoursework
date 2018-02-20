@@ -30,7 +30,7 @@ public class AdvComp {
             scanner.close();
             x++;
         }
-        br.close();
+     
 
 
 
