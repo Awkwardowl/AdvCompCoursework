@@ -1,10 +1,5 @@
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Scanner;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.*;
 
 public class AdvComp {
 
@@ -12,25 +7,14 @@ public class AdvComp {
     {
 
         ArrayList<Task1ReduceObject> Mapper = new ArrayList<Task1ReduceObject>();
-        ArrayList<String[]> DataL = new ArrayList<String[]>();
-        String[][] Data = new String[388][8];
-        String[] Row = new String[8];
+        ArrayList<String[]> Data = new ArrayList<String[]>();
 
-        DataL = GetDataFromCSV(DataL);
+        HashMap<String,  ArrayList<String[]>>HMap = new HashMap<String,  ArrayList<String[]>>();
 
-        for (int i=0; i <= DataL.size(); i++)
-        {
-            Row[0] = Data[i][0];
-            Row[1] = Data[i][1];
-            Row[2] = Data[i][2];
-            Row[3] = Data[i][3];
-            Row[4] = Data[i][4];
-            Row[5] = Data[i][5];
-            Row[6] = Data[i][6];
-            Row[7] = Data[i][7];
+        Data = GetDataFromCSV(Data);
+        Mapper = TurnToKeyValues(Data, Mapper);
+        HMap = CreateHashMap(HMap, Mapper);
 
-            Mapper.add(new Task1ReduceObject(Row));
-        }
         System.out.println("Debug");
     }
 
@@ -52,9 +36,6 @@ public class AdvComp {
                 for (int y=0; y < 8; y++)
                 {
                     Row[y]= scanner.next();
-
-//                    Data.add(Row);
-//                    Data[x][y] = scanner.next();
                 }
                 Data.add(Row);
             }
@@ -64,4 +45,56 @@ public class AdvComp {
         br.close();
         return Data;
     }
+
+    public static ArrayList<Task1ReduceObject> TurnToKeyValues(ArrayList<String[]> Data, ArrayList<Task1ReduceObject> Mapper ) throws IOException
+    {
+        String[] Row = new String[8];
+        while (Data.isEmpty() != true)
+        {
+            Row = Data.get(Data.size()-1);
+            Data.remove(Data.size()-1);
+            Mapper.add(new Task1ReduceObject(Row));
+        }
+        return Mapper;
+    }
+    public static HashMap<String,  ArrayList<String[]>> CreateHashMap(HashMap<String,  ArrayList<String[]>> HMap, ArrayList<Task1ReduceObject> Mapper ) throws IOException
+    {
+        Task1ReduceObject Single = null;
+
+        while (Mapper.isEmpty()!=true)
+        {
+            Single = Mapper.get(Mapper.size()-1);
+            Mapper.remove(Mapper.size()-1);
+
+            if( HMap.size()==0)
+            {
+                ArrayList<String[]> Payload = new ArrayList<String[]>();
+                Payload.add(Single.Payload);
+                HMap.put(Single.KeyDeparture, Payload);
+            }
+            else
+            {
+                for (int j =0; j <= HMap.size(); j++)
+                {
+                    ArrayList<String[]> Payload = new ArrayList<String[]>();
+                    if (HMap.containsKey(Single.KeyDeparture))
+                    {
+                        Payload = HMap.get(Single.KeyDeparture);
+                        Payload.add(Single.Payload);
+                        //HMap.get(Single.KeyDeparture);
+                        HMap.put(Single.KeyDeparture,Payload);
+                        break;
+                    }
+                    else
+                    {
+                        Payload.add(Single.Payload);
+                        HMap.put(Single.KeyDeparture, Payload);
+                        break;
+                    }
+                }
+            }
+        }
+        return HMap;
+    }
+
 }

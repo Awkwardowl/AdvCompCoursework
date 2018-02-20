@@ -2,6 +2,9 @@ public class Task1ReduceObject {
     String KeyDeparture;
     String[] Payload = new String[7];
 
+    public Task1ReduceObject() {
+    }
+
     public Task1ReduceObject(String[] SingleRow) {
        //String[] Payload = new String[7];
        Payload[0]=SingleRow[0];
