@@ -1,6 +1,10 @@
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Iterator;
+import java.util.Set;
 
 public class AdvComp {
 
@@ -8,13 +12,13 @@ public class AdvComp {
     {
 
         ArrayList<Task1ReduceObject> Mapper = new ArrayList<Task1ReduceObject>();
-        //ArrayList<String[8]> Dat
+        ArrayList<String[]> DataL = new ArrayList<String[]>();
         String[][] Data = new String[388][8];
         String[] Row = new String[8];
 
-        Data = GetDataFromCSV(Data);
+        DataL = GetDataFromCSV(DataL);
 
-        for (int i=0; i <= Data.length-1; i++)
+        for (int i=0; i <= DataL.size(); i++)
         {
             Row[0] = Data[i][0];
             Row[1] = Data[i][1];
@@ -30,7 +34,7 @@ public class AdvComp {
         System.out.println("Debug");
     }
 
-    public static String[][] GetDataFromCSV(String[][] Data ) throws IOException
+    public static ArrayList<String[]> GetDataFromCSV(ArrayList<String[]> Data ) throws IOException
     {
         BufferedReader br = new BufferedReader(new FileReader("AComp_Passenger_data_no_error.csv"));
         String newLine;
@@ -44,10 +48,15 @@ public class AdvComp {
 
             while(scanner.hasNext())
             {
+                String[] Row = new String[8];
                 for (int y=0; y < 8; y++)
                 {
-                    Data[x][y] = scanner.next();
+                    Row[y]= scanner.next();
+
+//                    Data.add(Row);
+//                    Data[x][y] = scanner.next();
                 }
+                Data.add(Row);
             }
             scanner.close();
             x++;
