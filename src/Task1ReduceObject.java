@@ -1,24 +1,19 @@
 public class Task1ReduceObject {
-    String PrimaryKeyDeparture;
+    String KeyDeparture;
+    String[] Payload = new String[7];
 
-    public Task1ReduceObject(String PassID, String FlightID, String Destination, String DepartTimeEpo, String FlightTime, String ArrivalTime, String DepartTime) {
-       String[] Payload = new String[7];
-       Payload[0]=PassID;
-       Payload[1]=FlightID;
-       Payload[2]=Destination;
-       Payload[3]=DepartTimeEpo;
-       Payload[4]=FlightTime;
-       Payload[5]=ArrivalTime;
-       Payload[6]=DepartTime;
+    public Task1ReduceObject(String[] SingleRow) {
+       //String[] Payload = new String[7];
+       Payload[0]=SingleRow[0];
+       Payload[1]=SingleRow[1];;
+       Payload[2]=SingleRow[3];;
+       Payload[3]=SingleRow[4];;
+       Payload[4]=SingleRow[5];;
+       Payload[5]=SingleRow[6];;
+       Payload[6]=SingleRow[7];;
+
+       KeyDeparture = SingleRow[2];
     }
 }
 
-//PassengerID
-//FlightID
-//DepartAirport *****
-//DestinationAirport
-//DepartureTimeEpo
-//FlightTime
-//ArrivalTime
-//DepartureTime
 
