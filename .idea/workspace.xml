@@ -20,33 +20,35 @@
       <file leaf-file-name="AdvComp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AdvComp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-415">
-              <caret line="35" column="33" lean-forward="false" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+            <state relative-caret-position="444">
+              <caret line="186" column="57" lean-forward="false" selection-start-line="186" selection-start-column="57" selection-end-line="186" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#214#233#0" expanded="true" />
-                <element signature="e#297#316#0" expanded="true" />
-                <element signature="e#368#378#0" expanded="true" />
-                <element signature="e#446#476#0" expanded="true" />
-                <element signature="e#544#574#0" expanded="true" />
+                <element signature="e#236#252#0" expanded="true" />
+                <element signature="e#313#329#0" expanded="true" />
+                <element signature="e#390#402#0" expanded="true" />
+                <element signature="e#455#465#0" expanded="true" />
+                <element signature="e#533#563#0" expanded="true" />
+                <element signature="e#631#661#0" expanded="true" />
                 <element signature="method#TurnToKeyValuesT2#0;class#AdvComp#0" expanded="false" />
                 <element signature="method#CreateHashMapT1#0;class#AdvComp#0" expanded="false" />
-                <element signature="e#3081#3091#0" expanded="true" />
-                <element signature="e#3376#3386#0" expanded="true" />
+                <element signature="e#3310#3320#0" expanded="true" />
+                <element signature="e#3605#3615#0" expanded="true" />
                 <element signature="method#CreateHashMapT2#0;class#AdvComp#0" expanded="false" />
-                <element signature="e#4523#4533#0" expanded="true" />
-                <element signature="e#4823#4833#0" expanded="true" />
-                <marker date="1519257275960" expanded="false" signature="1931:2193" ph="{...}" />
+                <element signature="e#4746#4756#0" expanded="true" />
+                <element signature="e#5046#5056#0" expanded="true" />
+                <element signature="e#5892#5902#0" expanded="true" />
+                <element signature="e#5963#5980#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Task2ReduceObject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Task2ReduceObject.java">
+      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="28" />
+            <state relative-caret-position="166">
+              <caret line="652" column="0" lean-forward="false" selection-start-line="652" selection-start-column="0" selection-end-line="652" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -55,8 +57,28 @@
       <file leaf-file-name="Task1ReduceObject.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Task1ReduceObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            <state relative-caret-position="0">
+              <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task2JobObject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Task2JobObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task1JobObject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Task1JobObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -85,16 +107,18 @@
       <list>
         <option value="$PROJECT_DIR$/src/main.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/Task1ReduceObject.java" />
-        <option value="$PROJECT_DIR$/src/Task2ReduceObject.java" />
         <option value="$PROJECT_DIR$/src/Task3ReduceObject.java" />
+        <option value="$PROJECT_DIR$/src/Task2ReduceObject.java" />
+        <option value="$PROJECT_DIR$/src/Task2JobObject.java" />
+        <option value="$PROJECT_DIR$/src/Task1ReduceObject.java" />
+        <option value="$PROJECT_DIR$/src/Task1JobObject.java" />
         <option value="$PROJECT_DIR$/src/AdvComp.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="155" />
-    <option name="y" value="-15" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="y" value="-16" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -114,8 +138,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -133,7 +155,9 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -279,29 +303,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4304348" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1953125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.140625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40108696" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="-142" y="496" width="1920" height="362" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37826088" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="-142" y="496" width="1920" height="362" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -319,31 +343,33 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/AdvComp.java</url>
-          <line>30</line>
+          <line>35</line>
           <properties />
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/AdvComp.java</url>
-          <line>21</line>
+          <line>8</line>
           <properties />
-          <option name="timeStamp" value="48" />
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/AdvComp.java</url>
-          <line>7</line>
+          <line>173</line>
           <properties />
-          <option name="timeStamp" value="49" />
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="50" />
+      <option name="time" value="53" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="Mapper" />
+        <watch expression="HMap2.entrySet().toArray()[0]" />
+        <watch expression="((java.util.ArrayList)((HashMap.Node)HMap.entrySet().toArray()[0]).getValue()).get(2)" custom="java.util.HashMap.Node,java.util.ArrayList" />
       </configuration>
     </watches-manager>
   </component>
@@ -354,24 +380,67 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#214#233#0" expanded="true" />
-            <element signature="e#297#316#0" expanded="true" />
-            <element signature="e#368#378#0" expanded="true" />
-            <element signature="e#446#476#0" expanded="true" />
-            <element signature="e#544#574#0" expanded="true" />
+            <element signature="e#236#252#0" expanded="true" />
+            <element signature="e#313#329#0" expanded="true" />
+            <element signature="e#390#402#0" expanded="true" />
+            <element signature="e#455#465#0" expanded="true" />
+            <element signature="e#533#563#0" expanded="true" />
+            <element signature="e#631#661#0" expanded="true" />
             <element signature="method#TurnToKeyValuesT2#0;class#AdvComp#0" expanded="false" />
             <element signature="method#CreateHashMapT1#0;class#AdvComp#0" expanded="false" />
-            <element signature="e#3081#3091#0" expanded="true" />
-            <element signature="e#3376#3386#0" expanded="true" />
+            <element signature="e#3310#3320#0" expanded="true" />
+            <element signature="e#3605#3615#0" expanded="true" />
             <element signature="method#CreateHashMapT2#0;class#AdvComp#0" expanded="false" />
-            <element signature="e#4523#4533#0" expanded="true" />
-            <element signature="e#4823#4833#0" expanded="true" />
-            <marker date="1519257275960" expanded="false" signature="1931:2193" ph="{...}" />
+            <element signature="e#4746#4756#0" expanded="true" />
+            <element signature="e#5046#5056#0" expanded="true" />
+            <element signature="e#5892#5902#0" expanded="true" />
+            <element signature="e#5963#5980#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Task2ReduceObject.java">
+    <entry file="file://$PROJECT_DIR$/src/Task2JobObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Task1JobObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AdvComp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#236#252#0" expanded="true" />
+            <element signature="e#313#329#0" expanded="true" />
+            <element signature="e#390#402#0" expanded="true" />
+            <element signature="e#455#465#0" expanded="true" />
+            <element signature="e#533#563#0" expanded="true" />
+            <element signature="e#631#661#0" expanded="true" />
+            <element signature="method#TurnToKeyValuesT2#0;class#AdvComp#0" expanded="false" />
+            <element signature="method#CreateHashMapT1#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#3310#3320#0" expanded="true" />
+            <element signature="e#3605#3615#0" expanded="true" />
+            <element signature="method#CreateHashMapT2#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#4746#4756#0" expanded="true" />
+            <element signature="e#5046#5056#0" expanded="true" />
+            <element signature="e#5892#5902#0" expanded="true" />
+            <element signature="e#5963#5980#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Task2JobObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
@@ -379,7 +448,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Task1ReduceObject.java">
+    <entry file="file://$PROJECT_DIR$/src/Task1JobObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
@@ -393,24 +462,26 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#214#233#0" expanded="true" />
-            <element signature="e#297#316#0" expanded="true" />
-            <element signature="e#368#378#0" expanded="true" />
-            <element signature="e#446#476#0" expanded="true" />
-            <element signature="e#544#574#0" expanded="true" />
+            <element signature="e#236#252#0" expanded="true" />
+            <element signature="e#313#329#0" expanded="true" />
+            <element signature="e#390#402#0" expanded="true" />
+            <element signature="e#455#465#0" expanded="true" />
+            <element signature="e#533#563#0" expanded="true" />
+            <element signature="e#631#661#0" expanded="true" />
             <element signature="method#TurnToKeyValuesT2#0;class#AdvComp#0" expanded="false" />
             <element signature="method#CreateHashMapT1#0;class#AdvComp#0" expanded="false" />
-            <element signature="e#3081#3091#0" expanded="true" />
-            <element signature="e#3376#3386#0" expanded="true" />
+            <element signature="e#3310#3320#0" expanded="true" />
+            <element signature="e#3605#3615#0" expanded="true" />
             <element signature="method#CreateHashMapT2#0;class#AdvComp#0" expanded="false" />
-            <element signature="e#4523#4533#0" expanded="true" />
-            <element signature="e#4823#4833#0" expanded="true" />
-            <marker date="1519257275960" expanded="false" signature="1931:2193" ph="{...}" />
+            <element signature="e#4746#4756#0" expanded="true" />
+            <element signature="e#5046#5056#0" expanded="true" />
+            <element signature="e#5892#5902#0" expanded="true" />
+            <element signature="e#5963#5980#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Task1ReduceObject.java">
+    <entry file="file://$PROJECT_DIR$/src/Task1JobObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
@@ -432,14 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="431" column="5" lean-forward="true" selection-start-line="431" selection-start-column="5" selection-end-line="431" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Task3ReduceObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -448,49 +511,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/function/BiConsumer.java">
+    <entry file="file://$PROJECT_DIR$/src/Task2JobObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="52" column="9" lean-forward="false" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        <state relative-caret-position="0">
+          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Task1JobObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Task1ReduceObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        <state relative-caret-position="0">
+          <caret line="0" column="30" lean-forward="false" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Task2ReduceObject.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="28" />
+        <state relative-caret-position="166">
+          <caret line="652" column="0" lean-forward="false" selection-start-line="652" selection-start-column="0" selection-end-line="652" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/function/BiConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="52" column="9" lean-forward="false" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1576">
+          <caret line="1287" column="0" lean-forward="false" selection-start-line="1287" selection-start-column="0" selection-end-line="1287" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AdvComp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-415">
-          <caret line="35" column="33" lean-forward="false" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+        <state relative-caret-position="444">
+          <caret line="186" column="57" lean-forward="false" selection-start-line="186" selection-start-column="57" selection-end-line="186" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#214#233#0" expanded="true" />
-            <element signature="e#297#316#0" expanded="true" />
-            <element signature="e#368#378#0" expanded="true" />
-            <element signature="e#446#476#0" expanded="true" />
-            <element signature="e#544#574#0" expanded="true" />
+            <element signature="e#236#252#0" expanded="true" />
+            <element signature="e#313#329#0" expanded="true" />
+            <element signature="e#390#402#0" expanded="true" />
+            <element signature="e#455#465#0" expanded="true" />
+            <element signature="e#533#563#0" expanded="true" />
+            <element signature="e#631#661#0" expanded="true" />
             <element signature="method#TurnToKeyValuesT2#0;class#AdvComp#0" expanded="false" />
             <element signature="method#CreateHashMapT1#0;class#AdvComp#0" expanded="false" />
-            <element signature="e#3081#3091#0" expanded="true" />
-            <element signature="e#3376#3386#0" expanded="true" />
+            <element signature="e#3310#3320#0" expanded="true" />
+            <element signature="e#3605#3615#0" expanded="true" />
             <element signature="method#CreateHashMapT2#0;class#AdvComp#0" expanded="false" />
-            <element signature="e#4523#4533#0" expanded="true" />
-            <element signature="e#4823#4833#0" expanded="true" />
-            <marker date="1519257275960" expanded="false" signature="1931:2193" ph="{...}" />
+            <element signature="e#4746#4756#0" expanded="true" />
+            <element signature="e#5046#5056#0" expanded="true" />
+            <element signature="e#5892#5902#0" expanded="true" />
+            <element signature="e#5963#5980#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,31 +1,36 @@
+import com.sun.org.apache.regexp.internal.RE;
+
 import java.io.*;
 import java.util.*;
-import java.util.Map;
 
 public class AdvComp {
 
     public static void main(String[] args) throws IOException
     {
 
-        ArrayList<Task1ReduceObject> Mapper1 = new ArrayList<Task1ReduceObject>();
-        ArrayList<Task2ReduceObject> Mapper2 = new ArrayList<Task2ReduceObject>();
+        ArrayList<Task1JobObject> Mapper1 = new ArrayList<Task1JobObject>();
+        ArrayList<Task2JobObject> Mapper2 = new ArrayList<Task2JobObject>();
+
+        ArrayList<String [][]> T1Results = new ArrayList<String[][]>();
+
         ArrayList<String[]> Data = new ArrayList<String[]>();
 
         HashMap<String,  ArrayList<String[]>>HMap = new HashMap<String,  ArrayList<String[]>>();
         HashMap<String,  ArrayList<String[]>>HMap2 = new HashMap<String,  ArrayList<String[]>>();
 
+        String NotIncluded = null;
+
         Data = GetDataFromCSV(Data);
         Mapper1 = TurnToKeyValuesT1(Data, Mapper1);
         HMap = CreateHashMapT1(HMap, Mapper1);
-        HMap.forEach((key, value) -> PrintPayloadTast11(key, value));
-
-        System.out.println("Debug");
+        HMap.forEach((key, value) -> NotIncluded = ReduceTask1(key, value, NotIncluded));
+        System.out.println("These airport did not get flights: "+NotIncluded);
 
 
         Data = GetDataFromCSV(Data);
         Mapper2 = TurnToKeyValuesT2(Data, Mapper2);
         HMap2 = CreateHashMapT2(HMap2, Mapper2);
-
+        HMap2.forEach((key, value) -> PrintPayloadTask3(key, value));
 
 
         System.out.println("Debug");
@@ -59,33 +64,33 @@ public class AdvComp {
         return Data;
     }
 
-    public static ArrayList<Task1ReduceObject> TurnToKeyValuesT1(ArrayList<String[]> Data, ArrayList<Task1ReduceObject> Mapper ) throws IOException
+    public static ArrayList<Task1JobObject> TurnToKeyValuesT1(ArrayList<String[]> Data, ArrayList<Task1JobObject> Mapper ) throws IOException
     {
         String[] Row = new String[8];
         while (Data.isEmpty() != true)
         {
             Row = Data.get(Data.size()-1);
             Data.remove(Data.size()-1);
-            Mapper.add(new Task1ReduceObject(Row));
+            Mapper.add(new Task1JobObject(Row));
         }
         return Mapper;
     }
 
-    public static ArrayList<Task2ReduceObject> TurnToKeyValuesT2(ArrayList<String[]> Data, ArrayList<Task2ReduceObject> Mapper ) throws IOException
+    public static ArrayList<Task2JobObject> TurnToKeyValuesT2(ArrayList<String[]> Data, ArrayList<Task2JobObject> Mapper ) throws IOException
     {
         String[] Row = new String[8];
         while (Data.isEmpty() != true)
         {
             Row = Data.get(Data.size()-1);
             Data.remove(Data.size()-1);
-            Mapper.add(new Task2ReduceObject(Row));
+            Mapper.add(new Task2JobObject(Row));
         }
         return Mapper;
     }
 
-    public static HashMap<String,  ArrayList<String[]>> CreateHashMapT1(HashMap<String,  ArrayList<String[]>> HMap, ArrayList<Task1ReduceObject> Mapper ) throws IOException
+    public static HashMap<String,  ArrayList<String[]>> CreateHashMapT1(HashMap<String,  ArrayList<String[]>> HMap, ArrayList<Task1JobObject> Mapper ) throws IOException
     {
-        Task1ReduceObject Single = null;
+        Task1JobObject Single = null;
 
         while (Mapper.isEmpty()!=true)
         {
@@ -123,9 +128,9 @@ public class AdvComp {
         return HMap;
     }
 
-    public static HashMap<String,  ArrayList<String[]>> CreateHashMapT2(HashMap<String,  ArrayList<String[]>> HMap, ArrayList<Task2ReduceObject> Mapper ) throws IOException
+    public static HashMap<String,  ArrayList<String[]>> CreateHashMapT2(HashMap<String,  ArrayList<String[]>> HMap, ArrayList<Task2JobObject> Mapper ) throws IOException
     {
-        Task2ReduceObject Single = null;
+        Task2JobObject Single = null;
 
         while (Mapper.isEmpty()!=true)
         {
@@ -163,14 +168,38 @@ public class AdvComp {
         return HMap;
     }
 
-    public static void PrintPayloadTast11(String key, ArrayList<String[]> data )
+    public static String ReduceTask1(String key, ArrayList<String[]> data, String NotIncluded)
+    {
+        ArrayList<String[]> Temp = new ArrayList<String[]>();
+        HashMap<String,  String> ReduceHMap = new HashMap<String,  String>();
+
+        for (int i =0; i <= data.size()-1; i++)
+        {
+            String TempString [] = data.get(i);
+            ReduceHMap.put(TempString[1],TempString[2]);
+        }
+
+        String ListOfAirports [] = {"AMS","ATL","BKK","CAN","CDG","CGK","CLT","DEN","DFW","DXB","FCO","FRA","HKG","HND","IAH","IST","JKF","KUL","LAS","LAX","LHR","MAD","MIA","MUC","ORD","PEK","PHX","PVG","SFO","SIN"};
+
+        for (int i =0; i <= ReduceHMap.size()-1; i++)
+        {
+            for (int j=0;j<=ListOfAirports.length-1; j++)
+            if (ReduceHMap.containsKey(ListOfAirports[j])){
+                NotIncluded = NotIncluded + "," + " " + ListOfAirports[j];
+            }
+        }
+        System.out.println("Their were "+ ReduceHMap.size()+" flights from "+ key);
+        return NotIncluded;
+    }
+
+    public static void PrintPayloadTask3(String key, ArrayList<String[]> data )
     {
 //        ArrayList<String[]> Temp = new ArrayList<String[]>();
 //
 //        for (int i=0; i<=ArrayList.Data(); i++ )
 //        {
 //            Temp = ArrayList.get(i);
-            System.out.println("Their were "+ data.size()+" flights from "+ key);
+        System.out.println("Their were "+ data.size()+" passengers on flight "+ key);
 
     }
 }
