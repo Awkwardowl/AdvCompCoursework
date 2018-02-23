@@ -1,7 +1,9 @@
 import com.sun.org.apache.regexp.internal.RE;
 
 import java.io.*;
+import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.Arrays;
 
 public class AdvComp {
 
@@ -11,29 +13,58 @@ public class AdvComp {
         ArrayList<Task1JobObject> Mapper1 = new ArrayList<Task1JobObject>();
         ArrayList<Task2JobObject> Mapper2 = new ArrayList<Task2JobObject>();
 
-        ArrayList<String [][]> T1Results = new ArrayList<String[][]>();
-
         ArrayList<String[]> Data = new ArrayList<String[]>();
 
         HashMap<String,  ArrayList<String[]>>HMap = new HashMap<String,  ArrayList<String[]>>();
         HashMap<String,  ArrayList<String[]>>HMap2 = new HashMap<String,  ArrayList<String[]>>();
 
-        String NotIncluded = null;
+        ArrayList<String> AirPortsUsed = new ArrayList<String>();
 
         Data = GetDataFromCSV(Data);
         Mapper1 = TurnToKeyValuesT1(Data, Mapper1);
         HMap = CreateHashMapT1(HMap, Mapper1);
-        HMap.forEach((key, value) -> NotIncluded = ReduceTask1(key, value, NotIncluded));
-        System.out.println("These airport did not get flights: "+NotIncluded);
+
+        String ListOfAirportsArray [] = {"AMS","ATL","BKK","CAN","CDG","CGK","CLT","DEN","DFW","DXB","FCO","FRA","HKG","HND","IAH","IST","JFK","KUL","LAS","LAX","LHR","MAD","MIA","MUC","ORD","PEK","PHX","PVG","SFO","SIN"};
+        ArrayList<String> ListOfAirports = new ArrayList<String>(Arrays.asList(ListOfAirportsArray));
+
+        for (String Key:HMap.keySet())
+        {
+            ArrayList<String[]> Value = HMap.get(Key);
+            AirPortsUsed = ReduceTask1(Key, Value, AirPortsUsed);
+        }
+
+        String NotUsed = "";
+
+        for(int i=0;i<=ListOfAirports.size()-1;i++){
+            if(AirPortsUsed.contains(ListOfAirports.get(i))!=false){
+//                NotUsed = NotUsed + ", "+ListOfAirports.get(i);
+            }else{
+                if (NotUsed == "")
+                {
+                    NotUsed = NotUsed + ""+ListOfAirports.get(i);
+                }
+                NotUsed = NotUsed + ", "+ListOfAirports.get(i);
+            }
+        }
+
+        System.out.println("These airport did not get flights: "+NotUsed);
+        System.out.println();
 
 
         Data = GetDataFromCSV(Data);
         Mapper2 = TurnToKeyValuesT2(Data, Mapper2);
         HMap2 = CreateHashMapT2(HMap2, Mapper2);
-        HMap2.forEach((key, value) -> PrintPayloadTask3(key, value));
+        for (String Key:HMap2.keySet())
+        {
+            ArrayList<String[]> Value = HMap2.get(Key);
+            ReduceTask2(Key, Value);
+        }
 
-
-        System.out.println("Debug");
+        for (String Key:HMap2.keySet())
+        {
+            ArrayList<String[]> Value = HMap2.get(Key);
+            ReduceTask3(Key, Value);
+        }
     }
 
     public static ArrayList<String[]> GetDataFromCSV(ArrayList<String[]> Data ) throws IOException
@@ -168,9 +199,9 @@ public class AdvComp {
         return HMap;
     }
 
-    public static String ReduceTask1(String key, ArrayList<String[]> data, String NotIncluded)
+    public static ArrayList<String> ReduceTask1(String key, ArrayList<String[]> data, ArrayList<String> NotIncluded)
     {
-        ArrayList<String[]> Temp = new ArrayList<String[]>();
+//        ArrayList<String[]> Temp = new ArrayList<String[]>();
         HashMap<String,  String> ReduceHMap = new HashMap<String,  String>();
 
         for (int i =0; i <= data.size()-1; i++)
@@ -179,27 +210,35 @@ public class AdvComp {
             ReduceHMap.put(TempString[1],TempString[2]);
         }
 
-        String ListOfAirports [] = {"AMS","ATL","BKK","CAN","CDG","CGK","CLT","DEN","DFW","DXB","FCO","FRA","HKG","HND","IAH","IST","JKF","KUL","LAS","LAX","LHR","MAD","MIA","MUC","ORD","PEK","PHX","PVG","SFO","SIN"};
+            NotIncluded.add(key);
 
-        for (int i =0; i <= ReduceHMap.size()-1; i++)
-        {
-            for (int j=0;j<=ListOfAirports.length-1; j++)
-            if (ReduceHMap.containsKey(ListOfAirports[j])){
-                NotIncluded = NotIncluded + "," + " " + ListOfAirports[j];
-            }
-        }
         System.out.println("Their were "+ ReduceHMap.size()+" flights from "+ key);
         return NotIncluded;
     }
 
-    public static void PrintPayloadTask3(String key, ArrayList<String[]> data )
+    public static void ReduceTask2(String key, ArrayList<String[]> data )
     {
-//        ArrayList<String[]> Temp = new ArrayList<String[]>();
-//
-//        for (int i=0; i<=ArrayList.Data(); i++ )
-//        {
-//            Temp = ArrayList.get(i);
-        System.out.println("Their were "+ data.size()+" passengers on flight "+ key);
+        String TempStringA [] = data.get(0);
+        SimpleDateFormat hhmmss;
+        hhmmss = new SimpleDateFormat("hh:mm:ss");
+        Date Departure = new Date(Long.parseLong(TempStringA[3]));
+        Date Arrival = new Date(Long.parseLong(TempStringA[3]+ Long.parseLong(TempStringA[4])*60));
+        System.out.println("Flight: "+key+". "+  TempStringA[1] + " -> "+TempStringA[2] +". Departure Time: "+ hhmmss.format(Departure) + ". Arrival Time: "+hhmmss.format(Arrival) +". Flight duration: " +TempStringA[4] + " minutes.");
+        for (int i=0; i<=data.size()-1; i++)
+        {
+            String TempString [] = data.get(i);
+            System.out.println("\t" +  TempString[0] );
+
+        }
+        System.out.println("");
+
+    }
+
+    public static void ReduceTask3(String key, ArrayList<String[]> data )
+    {
+        ArrayList<String[]> Temp = new ArrayList<String[]>();
+
+        System.out.println( data.size()+"\t" +" on Flight -->"+"\t" + key);
 
     }
 }
