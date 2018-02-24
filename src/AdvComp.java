@@ -7,8 +7,7 @@ import java.util.Arrays;
 
 public class AdvComp {
 
-    public static void main(String[] args) throws IOException
-    {
+    public static void main(String[] args) throws IOException, InterruptedException {
 
         ArrayList<Task1JobObject> Mapper1 = new ArrayList<Task1JobObject>();
         ArrayList<Task2JobObject> Mapper2 = new ArrayList<Task2JobObject>();
@@ -24,8 +23,8 @@ public class AdvComp {
         ArrayList<String[]> Data2 = new ArrayList<String[]>();
         Data2.addAll(Data);
         System.out.println("");
-
-        Mapper1 = TurnToKeyValuesT1(Data, Mapper1);
+        Mapper1 = Task1Mapper.MapperTask1(Data, Mapper1);
+//        Mapper1 = TurnToKeyValuesT1(Data, Mapper1);
         HMap = CreateHashMapT1(HMap, Mapper1);
 
         String ListOfAirportsArray [] = {"AMS","ATL","BKK","CAN","CDG","CGK","CLT","DEN","DFW","DXB","FCO","FRA","HKG","HND","IAH","IST","JFK","KUL","LAS","LAX","LHR","MAD","MIA","MUC","ORD","PEK","PHX","PVG","SFO","SIN"};
@@ -62,7 +61,19 @@ public class AdvComp {
 
         PrintWriter writer2 = new PrintWriter("ObjectiveTwo.txt", "UTF-8");
 
-        Mapper2 = TurnToKeyValuesT2(Data2, Mapper2);
+        List<String[]> DataA = Data2.subList(0,(Data2.size()/2));
+        List<String[]> DataB = Data2.subList(Data2.size()/2,Data2.size());
+
+        Task2Mapper Task = new Task2Mapper(DataA);
+        Task2Mapper Task2 = new Task2Mapper(DataB);
+        Task.start();
+        Task2.start();
+        Task.join();
+        Task2.join();
+
+        Mapper2.addAll(Task.getMapper());
+        Mapper2.addAll(Task2.getMapper());
+
         HMap2 = CreateHashMapT2(HMap2, Mapper2);
         for (String Key:HMap2.keySet())
         {
@@ -281,30 +292,6 @@ public class AdvComp {
         writer.close();
         //System.out.println("");
         return Data;
-    }
-
-    public static ArrayList<Task1JobObject> TurnToKeyValuesT1(ArrayList<String[]> Data, ArrayList<Task1JobObject> Mapper ) throws IOException
-    {
-        String[] Row = new String[8];
-        while (Data.isEmpty() != true)
-        {
-            Row = Data.get(Data.size()-1);
-            Data.remove(Data.size()-1);
-            Mapper.add(new Task1JobObject(Row));
-        }
-        return Mapper;
-    }
-
-    public static ArrayList<Task2JobObject> TurnToKeyValuesT2(ArrayList<String[]> Data, ArrayList<Task2JobObject> Mapper ) throws IOException
-    {
-        String[] Row = new String[8];
-        while (Data.isEmpty() != true)
-        {
-            Row = Data.get(Data.size()-1);
-            Data.remove(Data.size()-1);
-            Mapper.add(new Task2JobObject(Row));
-        }
-        return Mapper;
     }
 
     public static HashMap<String,  ArrayList<String[]>> CreateHashMapT1(HashMap<String,  ArrayList<String[]>> HMap, ArrayList<Task1JobObject> Mapper ) throws IOException

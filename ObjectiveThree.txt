@@ -3,9 +3,9 @@
 11	passengers on flightID -->	BER7172M
 15	passengers on flightID -->	KJR6646J
 11	passengers on flightID -->	RPG3351U
-6	passengers on flightID -->	HUR0974O
-11	passengers on flightID -->	ATT7791R
 12	passengers on flightID -->	VYW5940P
+11	passengers on flightID -->	ATT7791R
+6	passengers on flightID -->	HUR0974O
 9	passengers on flightID -->	HZT2506M
 10	passengers on flightID -->	VDC9164W
 6	passengers on flightID -->	EWH6301Y
