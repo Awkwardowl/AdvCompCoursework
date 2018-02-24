@@ -86,6 +86,15 @@ System.out.println();
         }
         else
         {
+
+            char c = array[0].charAt(0);
+            if (c == '\uFEFF')
+            {
+               array[0]=array[0].substring(1);
+            }
+            c = array[0].charAt(1);
+            c = array[0].charAt(2);
+            c = array[0].charAt(3);
             System.out.println("");
             boolean error = false;
             if (!(Character.isLetter(array[0].codePointAt(0))&&Character.isUpperCase(array[0].codePointAt(0))))
