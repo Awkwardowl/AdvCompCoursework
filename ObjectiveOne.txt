@@ -1,0 +1,25 @@
+Their were 2 flights from ORD
+Their were 1 flights from PVG
+Their were 2 flights from KUL
+Their were 1 flights from BKK
+Their were 1 flights from MIA
+Their were 2 flights from CGK
+Their were 1 flights from AMS
+Their were 1 flights from CDG
+Their were 1 flights from CLT
+Their were 4 flights from DEN
+Their were 1 flights from JFK
+Their were 1 flights from MAD
+Their were 2 flights from CAN
+Their were 2 flights from IAH
+Their were 1 flights from FCO
+Their were 1 flights from DFW
+Their were 1 flights from LHR
+Their were 1 flights from PEK
+Their were 2 flights from ATL
+Their were 1 flights from MUC
+Their were 1 flights from LAS
+Their were 1 flights from HND
+
+These airport did not get flights: DXB, DXB, FRA, HKG, IST, LAX, PHX, SFO, SIN
+

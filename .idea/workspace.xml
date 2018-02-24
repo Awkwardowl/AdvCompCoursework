@@ -20,50 +20,85 @@
       <file leaf-file-name="AdvComp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AdvComp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="223" column="0" lean-forward="false" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#main#0;class#AdvComp#0" expanded="false" />
                 <element signature="e#296#312#0" expanded="true" />
                 <element signature="e#373#389#0" expanded="true" />
                 <element signature="e#442#452#0" expanded="true" />
                 <element signature="e#520#550#0" expanded="true" />
                 <element signature="e#618#648#0" expanded="true" />
                 <element signature="e#707#715#0" expanded="true" />
-                <element signature="e#1170#1178#0" expanded="true" />
-                <element signature="e#9045#9053#0" expanded="true" />
-                <element signature="method#TurnToKeyValuesT1#0;class#AdvComp#0" expanded="false" />
+                <element signature="e#806#816#0" expanded="true" />
+                <element signature="e#1260#1268#0" expanded="true" />
+                <element signature="method#GetDataFromCSV#0;class#AdvComp#0" expanded="false" />
+                <element signature="e#10144#10152#0" expanded="true" />
                 <element signature="method#TurnToKeyValuesT2#0;class#AdvComp#0" expanded="false" />
                 <element signature="method#CreateHashMapT1#0;class#AdvComp#0" expanded="false" />
-                <element signature="e#11451#11461#0" expanded="true" />
-                <element signature="e#11746#11756#0" expanded="true" />
-                <element signature="e#12887#12897#0" expanded="true" />
-                <element signature="e#13187#13197#0" expanded="true" />
+                <element signature="e#12755#12765#0" expanded="true" />
+                <element signature="e#13050#13060#0" expanded="true" />
+                <element signature="method#CreateHashMapT2#0;class#AdvComp#0" expanded="false" />
+                <element signature="e#14191#14201#0" expanded="true" />
+                <element signature="e#14491#14501#0" expanded="true" />
                 <element signature="method#ReduceTask1#0;class#AdvComp#0" expanded="false" />
-                <element signature="e#14128#14145#0" expanded="true" />
-                <element signature="e#14931#14946#0" expanded="true" />
-                <element signature="e#15888#15898#0" expanded="true" />
-                <element signature="e#15961#15976#0" expanded="true" />
+                <element signature="e#15451#15468#0" expanded="true" />
+                <element signature="method#ReduceTask2#0;class#AdvComp#0" expanded="false" />
+                <element signature="e#16270#16285#0" expanded="true" />
+                <element signature="method#ReduceTask3#0;class#AdvComp#0" expanded="false" />
+                <element signature="e#17239#17249#0" expanded="true" />
+                <element signature="e#17312#17327#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AComp_Passenger_data.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AComp_Passenger_data.csv">
+      <file leaf-file-name="Task1Mapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Task1Mapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="10" />
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AComp_Passenger_data_no_error.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AComp_Passenger_data_no_error.csv">
+      <file leaf-file-name="ObjectiveOne.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ObjectiveOne.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="76" lean-forward="false" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObjectiveTwo.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ObjectiveTwo.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="61" column="14" lean-forward="false" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObjectiveThree.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ObjectiveThree.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ErrorLogs.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ErrorLogs.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -109,7 +144,15 @@
       <find>qhu</find>
       <find>QHU</find>
       <find>vAS</find>
+      <find>System.out.println(</find>
+      <find>disallowed</find>
+      <find>System.out</find>
+      <find>row</find>
+      <find>rpg</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -131,7 +174,10 @@
         <option value="$PROJECT_DIR$/src/Task1ReduceObject.java" />
         <option value="$PROJECT_DIR$/src/Task1JobObject.java" />
         <option value="$PROJECT_DIR$/AComp_Passenger_data.csv" />
+        <option value="$PROJECT_DIR$/ErrorLogs.txt" />
+        <option value="$PROJECT_DIR$/ObjectiveThree.txt" />
         <option value="$PROJECT_DIR$/src/AdvComp.java" />
+        <option value="$PROJECT_DIR$/src/Task1Mapper.java" />
       </list>
     </option>
   </component>
@@ -157,6 +203,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,10 +220,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -323,6 +369,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -333,18 +380,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2521739" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14782609" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.140625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22391304" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52717394" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="-142" y="496" width="1920" height="362" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52717394" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="2177" y="-106" width="1519" height="761" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -365,7 +412,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37826088" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="-142" y="496" width="1920" height="362" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52717394" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="2177" y="-106" width="1519" height="761" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -373,11 +420,11 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.9717391" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14782609" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.140625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22391304" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -390,19 +437,19 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/AdvComp.java</url>
-          <line>422</line>
+          <line>446</line>
           <properties />
           <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/AdvComp.java</url>
-          <line>76</line>
+          <line>85</line>
           <properties />
           <option name="timeStamp" value="96" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/AdvComp.java</url>
-          <line>89</line>
+          <line>101</line>
           <properties />
           <option name="timeStamp" value="97" />
         </line-breakpoint>
@@ -410,7 +457,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="98" />
+      <option name="time" value="99" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -425,26 +472,98 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#AdvComp#0" expanded="false" />
             <element signature="e#296#312#0" expanded="true" />
             <element signature="e#373#389#0" expanded="true" />
             <element signature="e#442#452#0" expanded="true" />
             <element signature="e#520#550#0" expanded="true" />
             <element signature="e#618#648#0" expanded="true" />
             <element signature="e#707#715#0" expanded="true" />
-            <element signature="e#1170#1178#0" expanded="true" />
-            <element signature="e#9045#9053#0" expanded="true" />
-            <element signature="method#TurnToKeyValuesT1#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#806#816#0" expanded="true" />
+            <element signature="e#1260#1268#0" expanded="true" />
+            <element signature="method#GetDataFromCSV#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#10144#10152#0" expanded="true" />
             <element signature="method#TurnToKeyValuesT2#0;class#AdvComp#0" expanded="false" />
             <element signature="method#CreateHashMapT1#0;class#AdvComp#0" expanded="false" />
-            <element signature="e#11451#11461#0" expanded="true" />
-            <element signature="e#11746#11756#0" expanded="true" />
-            <element signature="e#12887#12897#0" expanded="true" />
-            <element signature="e#13187#13197#0" expanded="true" />
+            <element signature="e#12755#12765#0" expanded="true" />
+            <element signature="e#13050#13060#0" expanded="true" />
+            <element signature="method#CreateHashMapT2#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#14191#14201#0" expanded="true" />
+            <element signature="e#14491#14501#0" expanded="true" />
             <element signature="method#ReduceTask1#0;class#AdvComp#0" expanded="false" />
-            <element signature="e#14128#14145#0" expanded="true" />
-            <element signature="e#14931#14946#0" expanded="true" />
-            <element signature="e#15888#15898#0" expanded="true" />
-            <element signature="e#15961#15976#0" expanded="true" />
+            <element signature="e#15451#15468#0" expanded="true" />
+            <element signature="method#ReduceTask2#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#16270#16285#0" expanded="true" />
+            <element signature="method#ReduceTask3#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#17239#17249#0" expanded="true" />
+            <element signature="e#17312#17327#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AComp_Passenger_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AComp_Passenger_data_no_error.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="76" lean-forward="false" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Task2JobObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Task1JobObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AdvComp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#296#312#0" expanded="true" />
+            <element signature="e#373#389#0" expanded="true" />
+            <element signature="e#442#452#0" expanded="true" />
+            <element signature="e#520#550#0" expanded="true" />
+            <element signature="e#618#648#0" expanded="true" />
+            <element signature="e#707#715#0" expanded="true" />
+            <element signature="e#806#816#0" expanded="true" />
+            <element signature="e#1260#1268#0" expanded="true" />
+            <element signature="method#GetDataFromCSV#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#10144#10152#0" expanded="true" />
+            <element signature="method#TurnToKeyValuesT2#0;class#AdvComp#0" expanded="false" />
+            <element signature="method#CreateHashMapT1#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#12755#12765#0" expanded="true" />
+            <element signature="e#13050#13060#0" expanded="true" />
+            <element signature="method#CreateHashMapT2#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#14191#14201#0" expanded="true" />
+            <element signature="e#14491#14501#0" expanded="true" />
+            <element signature="method#ReduceTask1#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#15451#15468#0" expanded="true" />
+            <element signature="method#ReduceTask2#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#16270#16285#0" expanded="true" />
+            <element signature="method#ReduceTask3#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#17239#17249#0" expanded="true" />
+            <element signature="e#17312#17327#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -487,26 +606,31 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#AdvComp#0" expanded="false" />
             <element signature="e#296#312#0" expanded="true" />
             <element signature="e#373#389#0" expanded="true" />
             <element signature="e#442#452#0" expanded="true" />
             <element signature="e#520#550#0" expanded="true" />
             <element signature="e#618#648#0" expanded="true" />
             <element signature="e#707#715#0" expanded="true" />
-            <element signature="e#1170#1178#0" expanded="true" />
-            <element signature="e#9045#9053#0" expanded="true" />
-            <element signature="method#TurnToKeyValuesT1#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#806#816#0" expanded="true" />
+            <element signature="e#1260#1268#0" expanded="true" />
+            <element signature="method#GetDataFromCSV#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#10144#10152#0" expanded="true" />
             <element signature="method#TurnToKeyValuesT2#0;class#AdvComp#0" expanded="false" />
             <element signature="method#CreateHashMapT1#0;class#AdvComp#0" expanded="false" />
-            <element signature="e#11451#11461#0" expanded="true" />
-            <element signature="e#11746#11756#0" expanded="true" />
-            <element signature="e#12887#12897#0" expanded="true" />
-            <element signature="e#13187#13197#0" expanded="true" />
+            <element signature="e#12755#12765#0" expanded="true" />
+            <element signature="e#13050#13060#0" expanded="true" />
+            <element signature="method#CreateHashMapT2#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#14191#14201#0" expanded="true" />
+            <element signature="e#14491#14501#0" expanded="true" />
             <element signature="method#ReduceTask1#0;class#AdvComp#0" expanded="false" />
-            <element signature="e#14128#14145#0" expanded="true" />
-            <element signature="e#14931#14946#0" expanded="true" />
-            <element signature="e#15888#15898#0" expanded="true" />
-            <element signature="e#15961#15976#0" expanded="true" />
+            <element signature="e#15451#15468#0" expanded="true" />
+            <element signature="method#ReduceTask2#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#16270#16285#0" expanded="true" />
+            <element signature="method#ReduceTask3#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#17239#17249#0" expanded="true" />
+            <element signature="e#17312#17327#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -533,26 +657,31 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#AdvComp#0" expanded="false" />
             <element signature="e#296#312#0" expanded="true" />
             <element signature="e#373#389#0" expanded="true" />
             <element signature="e#442#452#0" expanded="true" />
             <element signature="e#520#550#0" expanded="true" />
             <element signature="e#618#648#0" expanded="true" />
             <element signature="e#707#715#0" expanded="true" />
-            <element signature="e#1170#1178#0" expanded="true" />
-            <element signature="e#9045#9053#0" expanded="true" />
-            <element signature="method#TurnToKeyValuesT1#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#806#816#0" expanded="true" />
+            <element signature="e#1260#1268#0" expanded="true" />
+            <element signature="method#GetDataFromCSV#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#10144#10152#0" expanded="true" />
             <element signature="method#TurnToKeyValuesT2#0;class#AdvComp#0" expanded="false" />
             <element signature="method#CreateHashMapT1#0;class#AdvComp#0" expanded="false" />
-            <element signature="e#11451#11461#0" expanded="true" />
-            <element signature="e#11746#11756#0" expanded="true" />
-            <element signature="e#12887#12897#0" expanded="true" />
-            <element signature="e#13187#13197#0" expanded="true" />
+            <element signature="e#12755#12765#0" expanded="true" />
+            <element signature="e#13050#13060#0" expanded="true" />
+            <element signature="method#CreateHashMapT2#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#14191#14201#0" expanded="true" />
+            <element signature="e#14491#14501#0" expanded="true" />
             <element signature="method#ReduceTask1#0;class#AdvComp#0" expanded="false" />
-            <element signature="e#14128#14145#0" expanded="true" />
-            <element signature="e#14931#14946#0" expanded="true" />
-            <element signature="e#15888#15898#0" expanded="true" />
-            <element signature="e#15961#15976#0" expanded="true" />
+            <element signature="e#15451#15468#0" expanded="true" />
+            <element signature="method#ReduceTask2#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#16270#16285#0" expanded="true" />
+            <element signature="method#ReduceTask3#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#17239#17249#0" expanded="true" />
+            <element signature="e#17312#17327#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -579,26 +708,31 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#AdvComp#0" expanded="false" />
             <element signature="e#296#312#0" expanded="true" />
             <element signature="e#373#389#0" expanded="true" />
             <element signature="e#442#452#0" expanded="true" />
             <element signature="e#520#550#0" expanded="true" />
             <element signature="e#618#648#0" expanded="true" />
             <element signature="e#707#715#0" expanded="true" />
-            <element signature="e#1170#1178#0" expanded="true" />
-            <element signature="e#9045#9053#0" expanded="true" />
-            <element signature="method#TurnToKeyValuesT1#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#806#816#0" expanded="true" />
+            <element signature="e#1260#1268#0" expanded="true" />
+            <element signature="method#GetDataFromCSV#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#10144#10152#0" expanded="true" />
             <element signature="method#TurnToKeyValuesT2#0;class#AdvComp#0" expanded="false" />
             <element signature="method#CreateHashMapT1#0;class#AdvComp#0" expanded="false" />
-            <element signature="e#11451#11461#0" expanded="true" />
-            <element signature="e#11746#11756#0" expanded="true" />
-            <element signature="e#12887#12897#0" expanded="true" />
-            <element signature="e#13187#13197#0" expanded="true" />
+            <element signature="e#12755#12765#0" expanded="true" />
+            <element signature="e#13050#13060#0" expanded="true" />
+            <element signature="method#CreateHashMapT2#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#14191#14201#0" expanded="true" />
+            <element signature="e#14491#14501#0" expanded="true" />
             <element signature="method#ReduceTask1#0;class#AdvComp#0" expanded="false" />
-            <element signature="e#14128#14145#0" expanded="true" />
-            <element signature="e#14931#14946#0" expanded="true" />
-            <element signature="e#15888#15898#0" expanded="true" />
-            <element signature="e#15961#15976#0" expanded="true" />
+            <element signature="e#15451#15468#0" expanded="true" />
+            <element signature="method#ReduceTask2#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#16270#16285#0" expanded="true" />
+            <element signature="method#ReduceTask3#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#17239#17249#0" expanded="true" />
+            <element signature="e#17312#17327#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -622,7 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -674,6 +807,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AComp_Passenger_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7581">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ListOfAirports.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -682,40 +823,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AComp_Passenger_data.csv">
+    <entry file="file://$PROJECT_DIR$/ObjectiveOne.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="10" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectiveTwo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="61" column="14" lean-forward="false" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectiveThree.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ErrorLogs.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Task1Mapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AdvComp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="223" column="0" lean-forward="false" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#AdvComp#0" expanded="false" />
             <element signature="e#296#312#0" expanded="true" />
             <element signature="e#373#389#0" expanded="true" />
             <element signature="e#442#452#0" expanded="true" />
             <element signature="e#520#550#0" expanded="true" />
             <element signature="e#618#648#0" expanded="true" />
             <element signature="e#707#715#0" expanded="true" />
-            <element signature="e#1170#1178#0" expanded="true" />
-            <element signature="e#9045#9053#0" expanded="true" />
-            <element signature="method#TurnToKeyValuesT1#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#806#816#0" expanded="true" />
+            <element signature="e#1260#1268#0" expanded="true" />
+            <element signature="method#GetDataFromCSV#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#10144#10152#0" expanded="true" />
             <element signature="method#TurnToKeyValuesT2#0;class#AdvComp#0" expanded="false" />
             <element signature="method#CreateHashMapT1#0;class#AdvComp#0" expanded="false" />
-            <element signature="e#11451#11461#0" expanded="true" />
-            <element signature="e#11746#11756#0" expanded="true" />
-            <element signature="e#12887#12897#0" expanded="true" />
-            <element signature="e#13187#13197#0" expanded="true" />
+            <element signature="e#12755#12765#0" expanded="true" />
+            <element signature="e#13050#13060#0" expanded="true" />
+            <element signature="method#CreateHashMapT2#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#14191#14201#0" expanded="true" />
+            <element signature="e#14491#14501#0" expanded="true" />
             <element signature="method#ReduceTask1#0;class#AdvComp#0" expanded="false" />
-            <element signature="e#14128#14145#0" expanded="true" />
-            <element signature="e#14931#14946#0" expanded="true" />
-            <element signature="e#15888#15898#0" expanded="true" />
-            <element signature="e#15961#15976#0" expanded="true" />
+            <element signature="e#15451#15468#0" expanded="true" />
+            <element signature="method#ReduceTask2#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#16270#16285#0" expanded="true" />
+            <element signature="method#ReduceTask3#0;class#AdvComp#0" expanded="false" />
+            <element signature="e#17239#17249#0" expanded="true" />
+            <element signature="e#17312#17327#0" expanded="true" />
           </folding>
         </state>
       </provider>
