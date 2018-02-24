@@ -9,48 +9,67 @@ public class AdvComp {
 
     public static void main(String[] args) throws IOException, InterruptedException {
 
-        ArrayList<Task1JobObject> Mapper1 = new ArrayList<Task1JobObject>();
-        ArrayList<Task2JobObject> Mapper2 = new ArrayList<Task2JobObject>();
+        ArrayList<Task1JobObject> Mapper1 = new ArrayList<>();
+        ArrayList<Task2JobObject> Mapper2 = new ArrayList<>();
 
-        ArrayList<String[]> Data = new ArrayList<String[]>();
+        ArrayList<String[]> Data = new ArrayList<>();
 
-        HashMap<String,  ArrayList<String[]>>HMap = new HashMap<String,  ArrayList<String[]>>();
-        HashMap<String,  ArrayList<String[]>>HMap2 = new HashMap<String,  ArrayList<String[]>>();
+        HashMap<String,  ArrayList<String[]>>HMap = new HashMap<>();
+        HashMap<String,  ArrayList<String[]>>HMap2 = new HashMap<>();
 
-        ArrayList<String> AirPortsUsed = new ArrayList<String>();
+        ArrayList<String> AirPortsUsed = new ArrayList<>();
 
         Data = GetDataFromCSV(Data);
-        ArrayList<String[]> Data2 = new ArrayList<String[]>();
+        ArrayList<String[]> Data2 = new ArrayList<>();
         Data2.addAll(Data);
         System.out.println("");
-        Mapper1 = Task1Mapper.MapperTask1(Data, Mapper1);
-//        Mapper1 = TurnToKeyValuesT1(Data, Mapper1);
+        List<String[]> DataA = Data.subList(0,(Data2.size()/2));
+        List<String[]> DataB = Data.subList(Data2.size()/2,Data2.size());
+
+        Task1Mapper TaskObj1 = new Task1Mapper(DataA);
+        Task1Mapper TaskObj1B = new Task1Mapper(DataB);
+        TaskObj1.start();
+        TaskObj1B.start();
+        TaskObj1.join();
+        TaskObj1B.join();
+
+        Mapper1.addAll(TaskObj1.getMapper());
+        Mapper1.addAll(TaskObj1B.getMapper());
+
         HMap = CreateHashMapT1(HMap, Mapper1);
 
         String ListOfAirportsArray [] = {"AMS","ATL","BKK","CAN","CDG","CGK","CLT","DEN","DFW","DXB","FCO","FRA","HKG","HND","IAH","IST","JFK","KUL","LAS","LAX","LHR","MAD","MIA","MUC","ORD","PEK","PHX","PVG","SFO","SIN"};
-        ArrayList<String> ListOfAirports = new ArrayList<String>(Arrays.asList(ListOfAirportsArray));
+        ArrayList<String> ListOfAirports = new ArrayList<>(Arrays.asList(ListOfAirportsArray));
 
         PrintWriter writer = new PrintWriter("ObjectiveOne.txt", "UTF-8");
+
+        ArrayList<Task1Reducer> T1Reducers = new ArrayList<>();
 
         for (String Key:HMap.keySet())
         {
             ArrayList<String[]> Value = HMap.get(Key);
-            AirPortsUsed = ReduceTask1(Key, Value, AirPortsUsed, writer);
+            Task1Reducer Reduce = new Task1Reducer(Key, Value, AirPortsUsed, writer);
+            Reduce.start();
+            T1Reducers.add(Reduce);
         }
 
-
+        for (int i=0; i<=T1Reducers.size()-1; i++)
+        {
+            T1Reducers.get(i).join();
+        }
 
         String NotUsed = "";
 
         for(int i=0;i<=ListOfAirports.size()-1;i++){
             if(AirPortsUsed.contains(ListOfAirports.get(i))!=false){
-//                NotUsed = NotUsed + ", "+ListOfAirports.get(i);
             }else{
                 if (NotUsed == "")
                 {
                     NotUsed = NotUsed + ""+ListOfAirports.get(i);
+                }else{
+                    NotUsed = NotUsed + ", "+ListOfAirports.get(i);
                 }
-                NotUsed = NotUsed + ", "+ListOfAirports.get(i);
+
             }
         }
 
@@ -61,18 +80,18 @@ public class AdvComp {
 
         PrintWriter writer2 = new PrintWriter("ObjectiveTwo.txt", "UTF-8");
 
-        List<String[]> DataA = Data2.subList(0,(Data2.size()/2));
-        List<String[]> DataB = Data2.subList(Data2.size()/2,Data2.size());
+        List<String[]> Data2A = Data2.subList(0,(Data2.size()/2));
+        List<String[]> Data2B = Data2.subList(Data2.size()/2,Data2.size());
 
-        Task2Mapper Task = new Task2Mapper(DataA);
-        Task2Mapper Task2 = new Task2Mapper(DataB);
-        Task.start();
-        Task2.start();
-        Task.join();
-        Task2.join();
+        Task2Mapper TaskObj2 = new Task2Mapper(Data2A);
+        Task2Mapper TaskObj2B = new Task2Mapper(Data2B);
+        TaskObj2.start();
+        TaskObj2B.start();
+        TaskObj2.join();
+        TaskObj2B.join();
 
-        Mapper2.addAll(Task.getMapper());
-        Mapper2.addAll(Task2.getMapper());
+        Mapper2.addAll(TaskObj2.getMapper());
+        Mapper2.addAll(TaskObj2B.getMapper());
 
         HMap2 = CreateHashMapT2(HMap2, Mapper2);
         for (String Key:HMap2.keySet())
@@ -374,22 +393,22 @@ public class AdvComp {
         return HMap;
     }
 
-    public static ArrayList<String> ReduceTask1(String key, ArrayList<String[]> data, ArrayList<String> NotIncluded,PrintWriter writer)
-    {
-//        ArrayList<String[]> Temp = new ArrayList<String[]>();
-        HashMap<String,  String> ReduceHMap = new HashMap<String,  String>();
-
-        for (int i =0; i <= data.size()-1; i++)
-        {
-            String TempString [] = data.get(i);
-            ReduceHMap.put(TempString[1],TempString[2]);
-        }
-
-            NotIncluded.add(key);
-
-        writer.println("Their were "+ ReduceHMap.size()+" flights from "+ key);
-        return NotIncluded;
-    }
+//    public static ArrayList<String> ReduceTask1(String key, ArrayList<String[]> data, ArrayList<String> NotIncluded,PrintWriter writer)
+//    {
+////        ArrayList<String[]> Temp = new ArrayList<String[]>();
+//        HashMap<String,  String> ReduceHMap = new HashMap<String,  String>();
+//
+//        for (int i =0; i <= data.size()-1; i++)
+//        {
+//            String TempString [] = data.get(i);
+//            ReduceHMap.put(TempString[1],TempString[2]);
+//        }
+//
+//            NotIncluded.add(key);
+//
+//        writer.println("Their were "+ ReduceHMap.size()+" flights from "+ key);
+//        return NotIncluded;
+//    }
 
     public static void ReduceTask2(String key, ArrayList<String[]> data,PrintWriter writer3 )
     {

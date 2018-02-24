@@ -23,17 +23,4 @@ public class Task2Mapper extends Thread {
             Mapper.add(new Task2JobObject(array));
         }
     }
-
-//    public static ArrayList<Task2JobObject> MapperTask2(ArrayList<String[]> Data, ArrayList<Task2JobObject> Mapper ) throws IOException
-//    {
-//        String[] Row = new String[8];
-//        while (Data.isEmpty() != true)
-//        {
-//            Row = Data.get(Data.size()-1);
-//            Data.remove(Data.size()-1);
-//            Mapper.add(new Task2JobObject(Row));
-//        }
-//        return Mapper;
-//    }
-
 }

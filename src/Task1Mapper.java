@@ -1,20 +1,26 @@
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Task1Mapper extends Thread {
-    @Override
-    public void run() {
-    }
+    List<String[]> Data;
+    ArrayList<Task1JobObject> Mapper;
 
-    public static ArrayList<Task1JobObject> MapperTask1(ArrayList<String[]> Data, ArrayList<Task1JobObject> Mapper ) throws IOException
-    {
-        String[] Row = new String[8];
-        while (Data.isEmpty() != true)
-        {
-            Row = Data.get(Data.size()-1);
-            Data.remove(Data.size()-1);
-            Mapper.add(new Task1JobObject(Row));
-        }
+    public ArrayList<Task1JobObject> getMapper() {
         return Mapper;
     }
+
+    public Task1Mapper(List<String[]> DataI) {
+        Data = DataI;
+        Mapper = new ArrayList<>();
+    }
+
+    @Override
+    public void run() {
+        for(String[] array:Data)
+        {
+            Mapper.add(new Task1JobObject(array));
+        }
+    }
+
 }
