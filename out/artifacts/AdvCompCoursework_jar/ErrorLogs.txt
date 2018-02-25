@@ -1,5 +1,5 @@
 Error: Null field found in airport file.               Discarding row:  29
-Error: Hidden character found in:	UES9151GS7,    correcting row: 	1
+Error: Disallowed character found: 	﻿UES9151GS7,    Discarding row: 	1
 Error: Disallowed character found: 	MBw8071P,      Discarding row: 	6
 Error: Null field found.                           Discarding row:  9
 Error: Disallowed character found: 	UES915*GS7,    Discarding row: 	26

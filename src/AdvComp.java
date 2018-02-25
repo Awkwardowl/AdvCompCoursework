@@ -172,145 +172,146 @@ public class AdvComp {
         String [] array = newLine.split(",");
         if (array[0].equals("")||array[1].equals("")||array[2].equals("")||array[3].equals("")||array[4].equals("")||array[5].equals(""))
         {
-            writer.write("Error: Null field found.                           Discarding row:  "+x+"\n");
+            writer.write("Error: Null field found.                           Discarding row:  "+x+"\r\n");
             x++;
 //            System.out.println("Error: Null Field Found, Discarding Row "+ x);
         }
         else
         {
-
-            char c = array[0].charAt(0);
-            if (c == '\uFEFF')
+            int Length = array[0].length();
+            array[0] = array[0].replaceAll("\\P{Print}", "");
+            if ( Length != array[0].length())
             {
-               array[0]=array[0].substring(1);
+                writer.write("Error: Hidden character found in:\t"+array[0]+",    Correcting row: \t"+x+"\r\n");
+//               array[0]=array[0].substring(1);
             }
 //            System.out.println("");
             boolean error = false;
             if (!(Character.isLetter(array[0].codePointAt(0))&&Character.isUpperCase(array[0].codePointAt(0))))
             {
                 error = true;
-                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\n");
+                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\r\n");
             }
             else if (!(Character.isLetter(array[0].codePointAt(1)) &&Character.isUpperCase(array[0].codePointAt(1))))
             {
                 error = true;
-                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\n");
+                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\r\n");
 
 
             }
             else if (!(Character.isLetter(array[0].codePointAt(2))&&Character.isUpperCase(array[0].codePointAt(2))))
             {
                 error = true;
-                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\n");
+                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\r\n");
 
 
             }
             else if (!(Character.isDigit(array[0].codePointAt(3))))
             {
                 error = true;
-                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\n");
+                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\r\n");
 
 
             }
             else if (!(Character.isDigit(array[0].codePointAt(4))))
             {
                 error = true;
-                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\n");
+                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\r\n");
 
             }
             else if (!(Character.isDigit(array[0].codePointAt(5))))
             {
                 error = true;
-                writer.write("Error: Disallowed character found: \t"+array[0]+",   Discarding row: \t"+x+"\n");
+                writer.write("Error: Disallowed character found: \t"+array[0]+",   Discarding row: \t"+x+"\r\n");
 
             }
             else if (!(Character.isDigit(array[0].codePointAt(6))))
             {
                 error = true;
-                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\n");
+                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\r\n");
 
             }
             else if (!(Character.isLetter(array[0].codePointAt(7))&&Character.isUpperCase(array[0].codePointAt(7))))
             {
                 error = true;
-                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\n");
+                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\r\n");
 
             }
             else if (!(Character.isLetter(array[0].codePointAt(8))&&Character.isUpperCase(array[0].codePointAt(8))))
             {
                 error = true;
-                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\n");
+                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\r\n");
 
             }
             else if (!(Character.isDigit(array[0].codePointAt(9))))
             {
                 error = true;
-                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\n");
+                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\r\n");
 
             }
             else if (!(Character.isLetter(array[2].codePointAt(0))&&Character.isUpperCase(array[2].codePointAt(0))))
             {
                 error = true;
-                writer.write("Error: Disallowed character found: \t"+array[2]+",           Discarding row:\t"+x+"\n");
+                writer.write("Error: Disallowed character found: \t"+array[2]+",           Discarding row:\t"+x+"\r\n");
 
             }
             else if (!(Character.isLetter(array[2].codePointAt(1))&&Character.isUpperCase(array[2].codePointAt(1))))
             {
                 error = true;
-                writer.write("Error: Disallowed character found: \t"+array[2]+",           Discarding row: \t"+x+"\n");
+                writer.write("Error: Disallowed character found: \t"+array[2]+",           Discarding row: \t"+x+"\r\n");
             }
             else if (!(Character.isLetter(array[2].codePointAt(2))&&Character.isUpperCase(array[2].codePointAt(2))))
             {
                 error = true;
-                writer.write("Error: Disallowed character found: \t"+array[2]+",           Discarding row: \t"+x+"\n");
+                writer.write("Error: Disallowed character found: \t"+array[2]+",           Discarding row: \t"+x+"\r\n");
             }
             else if (array[0].length() != 10 )
             {
                 error = true;
-                writer.write("Error: Illegal Passenger ID length: \t"+array[0]+" Discarding row: \t"+x+"\n");
+                writer.write("Error: Illegal Passenger ID length: \t"+array[0]+" Discarding row: \t"+x+"\r\n");
             }
             else if (array[1].length() != 8 )
             {
                 error = true;
-                writer.write("Error: Illegal Flight ID length: \t"+array[1]+"      Discarding row: \t"+x+"\n");
+                writer.write("Error: Illegal Flight ID length: \t"+array[1]+"      Discarding row: \t"+x+"\r\n");
             }
             else if (!(Character.isLetter(array[1].codePointAt(0))&&Character.isUpperCase(array[1].codePointAt(0))))
             {
                 error = true;
-                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\n");
+                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\r\n");
             }
             else if (!(Character.isLetter(array[1].codePointAt(1)) &&Character.isUpperCase(array[1].codePointAt(1))))
             {
                 error = true;
-                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\n");            }
+                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\r\n");            }
             else if (!(Character.isLetter(array[1].codePointAt(2))&&Character.isUpperCase(array[1].codePointAt(2))))
             {
                 error = true;
-                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\n");            }
+                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\r\n");            }
             else if (!(Character.isDigit(array[1].codePointAt(3))))
             {
                 error = true;
-                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\n");
+                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\r\n");
             }
             else if (!(Character.isDigit(array[1].codePointAt(4))))
             {
                 error = true;
-                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\n");
+                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\r\n");
             }
             else if (!(Character.isDigit(array[1].codePointAt(5))))
             {
                 error = true;
-                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\n");
+                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\r\n");
             }
             else if (!(Character.isDigit(array[1].codePointAt(6))))
             {
                 error = true;
-                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\n");
+                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\r\n");
             }
             else if (!(Character.isLetter(array[1].codePointAt(7))&&Character.isUpperCase(array[1].codePointAt(7))))
             {
                 error = true;
-                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\n");
+                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\r\n");
             }
 
 
@@ -322,7 +323,7 @@ public class AdvComp {
                     if ((!(ListOfAirports.contains(array[2])))&&error==false)
                     {
                         error=true;
-                        writer.write("Error: Illegal airport detected: \t"+array[2]+"            Discarding row: \t"+x+"\n");
+                        writer.write("Error: Illegal airport detected: \t"+array[2]+"            Discarding row: \t"+x+"\r\n");
                         break;
                     }
                 }
@@ -332,7 +333,7 @@ public class AdvComp {
                     if ((!(ListOfAirports.contains(array[3])))&&error==false)
                     {
                         error=true;
-                        writer.write("Error: Illegal airport detected: \t"+array[3]+"            Discarding row: \t"+x+"\n");
+                        writer.write("Error: Illegal airport detected: \t"+array[3]+"            Discarding row: \t"+x+"\r\n");
                         break;
                     }
                 }
@@ -465,13 +466,13 @@ public class AdvComp {
                 }
                 else
                 {
-                    writer.write("Error: Null field found in airport file.           Discarding row:  "+i+"\n");
+                    writer.write("Error: Null field found in airport file.               Discarding row:  "+i+"\r\n");
 
                 }
             }
             else
             {
-                writer.write("Error: Null field found in airport file.           Discarding row:  "+i+"\n");
+                writer.write("Error: Null field found in airport file.               Discarding row:  "+i+"\r\n");
             }
         }
         br.close();
