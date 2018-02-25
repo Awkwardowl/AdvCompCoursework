@@ -129,7 +129,7 @@ public class AdvComp {
 
         PrintWriter writer3 = new PrintWriter("ObjectiveThree.txt", "UTF-8");
 
-        ArrayList<Task3Reducer> T3Reducers = new ArrayList<>();
+        ArrayList<Task3Reducer> T3Reducers = new ArrayList<>(); //arraylist
 
         for (String Key:HMap2.keySet())
         {
