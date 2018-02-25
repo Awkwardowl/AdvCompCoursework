@@ -1,3 +1,4 @@
+Error: Null field found in airport file.           Discarding row:  29
 Error: Disallowed character found: 	MBw8071P,      Discarding row: 	6
 Error: Null field found.                           Discarding row:  9
 Error: Disallowed character found: 	UES915*GS7,    Discarding row: 	26

@@ -1,25 +1,25 @@
-Their were 1 flights from PVG
-Their were 2 flights from ORD
-Their were 2 flights from KUL
-Their were 1 flights from AMS
-Their were 1 flights from BKK
-Their were 1 flights from MIA
-Their were 1 flights from CDG
-Their were 1 flights from CLT
-Their were 1 flights from JFK
-Their were 2 flights from CGK
-Their were 4 flights from DEN
-Their were 2 flights from CAN
-Their were 2 flights from IAH
-Their were 1 flights from MAD
-Their were 1 flights from FCO
-Their were 1 flights from DFW
-Their were 1 flights from PEK
-Their were 2 flights from ATL
-Their were 1 flights from LHR
-Their were 1 flights from MUC
-Their were 1 flights from HND
-Their were 1 flights from LAS
+Their were 1 flights from PVG (SHANGHAI)
+Their were 2 flights from KUL (KUALA LUMPUR)
+Their were 2 flights from ORD (CHICAGO)
+Their were 1 flights from BKK (BANGKOK)
+Their were 1 flights from MIA (MIAMI)
+Their were 2 flights from CGK (JAKARTA)
+Their were 1 flights from CDG (PARIS)
+Their were 1 flights from AMS (AMSTERDAM)
+Their were 1 flights from CLT (CHARLOTTE)
+Their were 4 flights from DEN (DENVER)
+Their were 1 flights from JFK (NEW YORK)
+Their were 2 flights from IAH (HOUSTON)
+Their were 2 flights from CAN (GUANGZHOU)
+Their were 1 flights from MAD (MADRID)
+Their were 1 flights from FCO (ROME)
+Their were 1 flights from LHR (LONDON)
+Their were 1 flights from PEK (BEIJING)
+Their were 2 flights from ATL (ATLANTA)
+Their were 1 flights from HND (TOKYO)
+Their were 1 flights from MUC (MUNICH)
+Their were 1 flights from LAS (LAS VEGAS)
+Their were 1 flights from DFW (DALLAS/FORT WORTH)
 
-These airport did not get flights: DXB, FRA, HKG, IST, LAX, PHX, SFO, SIN
+These airport did not get flights: LAX(LOS ANGELES), FRA(FRANKFURT), HKG(HONG KONG), DXB(DUBAI), SIN(SINGAPORE), SFO(SAN FRANCISCO), PHX(PHOENIX), IST(ISTANBUL)
 

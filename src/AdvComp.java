@@ -1,6 +1,7 @@
 import java.io.*;
 import java.util.*;
 import java.util.Arrays;
+import java.util.stream.Collectors;
 
 public class AdvComp {
 
@@ -16,7 +17,12 @@ public class AdvComp {
 
         ArrayList<String> AirPortsUsed = new ArrayList<>();
 
-        Data = GetDataFromCSV(Data);
+        String ListOfAirportsArray [][] = getAirports();
+        String ListOfAirportsCode[] = ListOfAirportsArray[1];
+        String ListOfAirportsName[] = ListOfAirportsArray[0];
+        System.out.println();
+
+        Data = GetDataFromCSV(Data,ListOfAirportsCode);
         ArrayList<String[]> Data2 = new ArrayList<>();
         Data2.addAll(Data);
         System.out.println("");
@@ -34,9 +40,15 @@ public class AdvComp {
         Mapper1.addAll(TaskObj1B.getMapper());
 
         HMap = CreateHashMapT1(HMap, Mapper1);
+//        LinkedHashMap <String, String[]> sortedHMap = new LinkedHashMap<String, String[]>(HMap);
+//        sortedHMap.putAll(HMap);
+//        SortedMap <String, String[]> sortedHMap = new Map<String, String[]>(HMap);
 
-        String ListOfAirportsArray [] = {"AMS","ATL","BKK","CAN","CDG","CGK","CLT","DEN","DFW","DXB","FCO","FRA","HKG","HND","IAH","IST","JFK","KUL","LAS","LAX","LHR","MAD","MIA","MUC","ORD","PEK","PHX","PVG","SFO","SIN"};
-        ArrayList<String> ListOfAirports = new ArrayList<>(Arrays.asList(ListOfAirportsArray));
+
+//      String ListOfAirportsArray [] = {"AMS","ATL","BKK","CAN","CDG","CGK","CLT","DEN","DFW","DXB","FCO","FRA","HKG","HND","IAH","IST","JFK","KUL","LAS","LAX","LHR","MAD","MIA","MUC","ORD","PEK","PHX","PVG","SFO","SIN"};
+//        String OneDListOfAirports[] = ListOfAirportsArray[0];
+        ArrayList<String> ListOfAirports = new ArrayList<>(Arrays.asList(ListOfAirportsCode));
+        ArrayList<String> ListOfAirportsNames = new ArrayList<>(Arrays.asList(ListOfAirportsName));
 
         PrintWriter writer = new PrintWriter("ObjectiveOne.txt", "UTF-8");
 
@@ -45,7 +57,7 @@ public class AdvComp {
         for (String Key:HMap.keySet())
         {
             ArrayList<String[]> Value = HMap.get(Key);
-            Task1Reducer Reduce = new Task1Reducer(Key, Value, AirPortsUsed, writer);
+            Task1Reducer Reduce = new Task1Reducer(Key, Value, AirPortsUsed, writer,ListOfAirportsArray);
             Reduce.start();
             T1Reducers.add(Reduce);
         }
@@ -62,9 +74,9 @@ public class AdvComp {
             }else{
                 if (NotUsed == "")
                 {
-                    NotUsed = NotUsed + ""+ListOfAirports.get(i);
+                    NotUsed = NotUsed + ListOfAirports.get(i)+"("+ListOfAirportsNames.get(i)+")";
                 }else{
-                    NotUsed = NotUsed + ", "+ListOfAirports.get(i);
+                    NotUsed = NotUsed + ", " +ListOfAirports.get(i)+"("+ListOfAirportsNames.get(i)+")";
                 }
 
             }
@@ -98,7 +110,7 @@ public class AdvComp {
         for (String Key:HMap2.keySet())
         {
             ArrayList<String[]> Value = HMap2.get(Key);
-            Task2Reducer Reduce2 = new Task2Reducer(Key, Value);
+            Task2Reducer Reduce2 = new Task2Reducer(Key, Value,ListOfAirportsArray);
             Reduce2.start();
             T2Reducers.add(Reduce2);
         }
@@ -148,9 +160,10 @@ public class AdvComp {
         writer3.close();
     }
 
-    public static ArrayList<String[]> GetDataFromCSV(ArrayList<String[]> Data ) throws IOException
+    public static ArrayList<String[]> GetDataFromCSV(ArrayList<String[]> Data, String[] ListOfAirportsCode) throws IOException
     {
-        PrintWriter writer = new PrintWriter("ErrorLogs.txt", "UTF-8");
+        FileWriter bw = new FileWriter("ErrorLogs.txt", true);
+        BufferedWriter writer = new BufferedWriter(bw);
         int x=1;
         BufferedReader br = new BufferedReader(new FileReader("AComp_Passenger_data.csv"));
         String newLine;
@@ -159,7 +172,7 @@ public class AdvComp {
         String [] array = newLine.split(",");
         if (array[0].equals("")||array[1].equals("")||array[2].equals("")||array[3].equals("")||array[4].equals("")||array[5].equals(""))
         {
-            writer.println("Error: Null field found.                           Discarding row:  "+x);
+            writer.write("Error: Null field found.                           Discarding row:  "+x+"\n");
             x++;
 //            System.out.println("Error: Null Field Found, Discarding Row "+ x);
         }
@@ -176,150 +189,150 @@ public class AdvComp {
             if (!(Character.isLetter(array[0].codePointAt(0))&&Character.isUpperCase(array[0].codePointAt(0))))
             {
                 error = true;
-                writer.println("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x);
+                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\n");
             }
             else if (!(Character.isLetter(array[0].codePointAt(1)) &&Character.isUpperCase(array[0].codePointAt(1))))
             {
                 error = true;
-                writer.println("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x);
+                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\n");
 
 
             }
             else if (!(Character.isLetter(array[0].codePointAt(2))&&Character.isUpperCase(array[0].codePointAt(2))))
             {
                 error = true;
-                writer.println("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x);
+                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\n");
 
 
             }
             else if (!(Character.isDigit(array[0].codePointAt(3))))
             {
                 error = true;
-                writer.println("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x);
+                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\n");
 
 
             }
             else if (!(Character.isDigit(array[0].codePointAt(4))))
             {
                 error = true;
-                writer.println("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x);
+                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\n");
 
             }
             else if (!(Character.isDigit(array[0].codePointAt(5))))
             {
                 error = true;
-                writer.println("Error: Disallowed character found: \t"+array[0]+",   Discarding row: \t"+x);
+                writer.write("Error: Disallowed character found: \t"+array[0]+",   Discarding row: \t"+x+"\n");
 
             }
             else if (!(Character.isDigit(array[0].codePointAt(6))))
             {
                 error = true;
-                writer.println("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x);
+                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\n");
 
             }
             else if (!(Character.isLetter(array[0].codePointAt(7))&&Character.isUpperCase(array[0].codePointAt(7))))
             {
                 error = true;
-                writer.println("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x);
+                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\n");
 
             }
             else if (!(Character.isLetter(array[0].codePointAt(8))&&Character.isUpperCase(array[0].codePointAt(8))))
             {
                 error = true;
-                writer.println("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x);
+                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\n");
 
             }
             else if (!(Character.isDigit(array[0].codePointAt(9))))
             {
                 error = true;
-                writer.println("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x);
+                writer.write("Error: Disallowed character found: \t"+array[0]+",    Discarding row: \t"+x+"\n");
 
             }
             else if (!(Character.isLetter(array[2].codePointAt(0))&&Character.isUpperCase(array[2].codePointAt(0))))
             {
                 error = true;
-                writer.println("Error: Disallowed character found: \t"+array[2]+",           Discarding row:\t"+x);
+                writer.write("Error: Disallowed character found: \t"+array[2]+",           Discarding row:\t"+x+"\n");
 
             }
             else if (!(Character.isLetter(array[2].codePointAt(1))&&Character.isUpperCase(array[2].codePointAt(1))))
             {
                 error = true;
-                writer.println("Error: Disallowed character found: \t"+array[2]+",           Discarding row: \t"+x);
+                writer.write("Error: Disallowed character found: \t"+array[2]+",           Discarding row: \t"+x+"\n");
             }
             else if (!(Character.isLetter(array[2].codePointAt(2))&&Character.isUpperCase(array[2].codePointAt(2))))
             {
                 error = true;
-                writer.println("Error: Disallowed character found: \t"+array[2]+",           Discarding row: \t"+x);
+                writer.write("Error: Disallowed character found: \t"+array[2]+",           Discarding row: \t"+x+"\n");
             }
             else if (array[0].length() != 10 )
             {
                 error = true;
-                writer.println("Error: Illegal Passenger ID length: \t"+array[0]+" Discarding row: \t"+x);
+                writer.write("Error: Illegal Passenger ID length: \t"+array[0]+" Discarding row: \t"+x+"\n");
             }
             else if (array[1].length() != 8 )
             {
                 error = true;
-                writer.println("Error: Illegal Flight ID length: \t"+array[1]+"      Discarding row: \t"+x);
+                writer.write("Error: Illegal Flight ID length: \t"+array[1]+"      Discarding row: \t"+x+"\n");
             }
             else if (!(Character.isLetter(array[1].codePointAt(0))&&Character.isUpperCase(array[1].codePointAt(0))))
             {
                 error = true;
-                writer.println("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x);
+                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\n");
             }
             else if (!(Character.isLetter(array[1].codePointAt(1)) &&Character.isUpperCase(array[1].codePointAt(1))))
             {
                 error = true;
-                writer.println("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x);            }
+                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\n");            }
             else if (!(Character.isLetter(array[1].codePointAt(2))&&Character.isUpperCase(array[1].codePointAt(2))))
             {
                 error = true;
-                writer.println("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x);            }
+                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\n");            }
             else if (!(Character.isDigit(array[1].codePointAt(3))))
             {
                 error = true;
-                writer.println("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x);
+                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\n");
             }
             else if (!(Character.isDigit(array[1].codePointAt(4))))
             {
                 error = true;
-                writer.println("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x);
+                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\n");
             }
             else if (!(Character.isDigit(array[1].codePointAt(5))))
             {
                 error = true;
-                writer.println("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x);
+                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\n");
             }
             else if (!(Character.isDigit(array[1].codePointAt(6))))
             {
                 error = true;
-                writer.println("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x);
+                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\n");
             }
             else if (!(Character.isLetter(array[1].codePointAt(7))&&Character.isUpperCase(array[1].codePointAt(7))))
             {
                 error = true;
-                writer.println("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x);
+                writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\n");
             }
 
 
-                String ListOfAirportsArray [] = {"AMS","ATL","BKK","CAN","CDG","CGK","CLT","DEN","DFW","DXB","FCO","FRA","HKG","HND","IAH","IST","JFK","KUL","LAS","LAX","LHR","MAD","MIA","MUC","ORD","PEK","PHX","PVG","SFO","SIN"};
-                ArrayList<String> ListOfAirports = new ArrayList<String>(Arrays.asList(ListOfAirportsArray));
+//                String ListOfAirportsCode [] = {"AMS","ATL","BKK","CAN","CDG","CGK","CLT","DEN","DFW","DXB","FCO","FRA","HKG","HND","IAH","IST","JFK","KUL","LAS","LAX","LHR","MAD","MIA","MUC","ORD","PEK","PHX","PVG","SFO","SIN"};
+                ArrayList<String> ListOfAirports = new ArrayList<>(Arrays.asList(ListOfAirportsCode));
 
-                for (int i=0; i<=ListOfAirportsArray.length; i++)
+                for (int i=0; i<=ListOfAirportsCode.length; i++)
                 {
                     if ((!(ListOfAirports.contains(array[2])))&&error==false)
                     {
                         error=true;
-                        writer.println("Error: Illegal airport detected: \t"+array[2]+"            Discarding row: \t"+x);
+                        writer.write("Error: Illegal airport detected: \t"+array[2]+"            Discarding row: \t"+x+"\n");
                         break;
                     }
                 }
 
-                for (int i=0; i<=ListOfAirportsArray.length; i++)
+                for (int i=0; i<=ListOfAirportsCode.length; i++)
                 {
                     if ((!(ListOfAirports.contains(array[3])))&&error==false)
                     {
                         error=true;
-                        writer.println("Error: Illegal airport detected: \t"+array[3]+"            Discarding row: \t"+x);
+                        writer.write("Error: Illegal airport detected: \t"+array[3]+"            Discarding row: \t"+x+"\n");
                         break;
                     }
                 }
@@ -430,64 +443,41 @@ public class AdvComp {
         return HMap;
     }
 
-//    public static ArrayList<String> ReduceTask1(String key, ArrayList<String[]> data, ArrayList<String> NotIncluded,PrintWriter writer)
-//    {
-////        ArrayList<String[]> Temp = new ArrayList<String[]>();
-//        HashMap<String,  String> ReduceHMap = new HashMap<String,  String>();
-//
-//        for (int i =0; i <= data.size()-1; i++)
-//        {
-//            String TempString [] = data.get(i);
-//            ReduceHMap.put(TempString[1],TempString[2]);
-//        }
-//
-//            NotIncluded.add(key);
-//
-//        writer.println("Their were "+ ReduceHMap.size()+" flights from "+ key);
-//        return NotIncluded;
-//    }
+    public static String[][] getAirports() throws IOException
+    {
+        FileWriter bw = new FileWriter("ErrorLogs.txt", false);
+        BufferedWriter writer = new BufferedWriter(bw);
+        BufferedReader br = new BufferedReader(new FileReader("Top30_airports_LatLong.csv"));
 
-//    public static void ReduceTask2(String key, ArrayList<String[]> data,PrintWriter writer3 )
-//    {
-//        String TempStringA [] = data.get(0);
-//        SimpleDateFormat hhmmss;
-//        //hhmmss = new SimpleDateFormat("hh:mm:ss");
-//        Date Departure = new Date(Long.parseLong(TempStringA[3])*1000);
-//        Date Arrival = new Date(Long.parseLong(TempStringA[3])*1000+ Long.parseLong(TempStringA[4])*60*1000);
-//
-//        HashMap<String,String> PassengerCheck = new HashMap<String,String>();
-//
-//        for (int i=0; i<=data.size()-1; i++)
-//        {
-//            String[] hold = data.get(i);
-//            PassengerCheck.put(hold[0],"");
-//        }
-//
-////        System.out.println(data.size() +" Flight: "+key+". "+  TempStringA[1] + " -> "+TempStringA[2] +". Departure Time: "+ hhmmss.format(Departure) + ". Arrival Time: "+hhmmss.format(Arrival) +". Flight duration: " +TempStringA[4] + " minutes.");
-//        writer3.println(PassengerCheck.size() +" Flight: "+key+". "+  TempStringA[1] + " -> "+TempStringA[2] +". Departure Time: "+ (Departure) + ". Arrival Time: "+(Arrival) +". Flight duration: " +TempStringA[4] + " minutes.");
-//
-//
-//            for (String Key:PassengerCheck.keySet())
-//            {
-//                writer3.println("\t" +  Key );
-//            }
-//
-//        writer3.println("");
-//
-//    }
+        String newLine;
+        String[][] output = new String[2][30];
+        int i=0;
+        while ((newLine = br.readLine()) != null) {
 
-//    public static void ReduceTask3(String key, ArrayList<String[]> data, PrintWriter writer2 )
-//    {
-//        ArrayList<String[]> Temp = new ArrayList<String[]>();
-//        HashMap<String,String> PassengerCheck = new HashMap<String,String>();
-//
-//        for (int i=0; i<=data.size()-1; i++)
-//        {
-//            String[] hold = data.get(i);
-//            PassengerCheck.put(hold[0],"");
-//        }
-//
-//        writer2.println( PassengerCheck.size()+"\tpassengers on flightID -->"+"\t" + key);
-//
-//    }
+            String[] array = newLine.split(",");
+            if (!array[0].equals(""))
+            {
+                if (!array[1].equals(""))
+                {
+                    output[1][i] = array[1];
+                    output[0][i] = array[0];
+                    i++;
+                }
+                else
+                {
+                    writer.write("Error: Null field found in airport file.           Discarding row:  "+i+"\n");
+
+                }
+            }
+            else
+            {
+                writer.write("Error: Null field found in airport file.           Discarding row:  "+i+"\n");
+            }
+        }
+        br.close();
+        writer.close();
+        return output;
+    }
+
+
 }

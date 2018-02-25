@@ -1,4 +1,4 @@
-13 on flight: QHU1140O. CDG -> LAS. Departure Time: 17:14:58. Arrival Time: 12:07:58. Flight duration: 1133 minutes.
+13 on flight: QHU1140O. CDG (PARIS) -> LAS (LAS VEGAS). Departure Time: 17:14:58. Arrival Time: 12:07:58. Flight duration: 1133 minutes.
 BWI0520BG6
 CKZ3133BR0
 JBE2302VO6
@@ -13,7 +13,7 @@ SJD8775RZ8
 MXU9187YC7
 LLZ3798PE5
 
-14 on flight: FYL5866L. ATL -> HKG. Departure Time: 17:25:40. Arrival Time: 22:36:40. Flight duration: 1751 minutes.
+14 on flight: FYL5866L. ATL (ATLANTA) -> HKG (HONG KONG). Departure Time: 17:25:40. Arrival Time: 22:36:40. Flight duration: 1751 minutes.
 LLZ3799PE1
 HCA3159QA4
 CKZ3133BR3
@@ -29,7 +29,7 @@ WYU2011YH2
 JJM4725RF2
 CXN7305ER2
 
-11 on flight: BER7172M. KUL -> LAS. Departure Time: 17:26:07. Arrival Time: 00:14:07. Flight duration: 1848 minutes.
+11 on flight: BER7172M. KUL (KUALA LUMPUR) -> LAS (LAS VEGAS). Departure Time: 17:26:07. Arrival Time: 00:14:07. Flight duration: 1848 minutes.
 WTC9126IE0
 WBE6936NU2
 HCA3159QA5
@@ -42,7 +42,7 @@ WYU2011YH3
 PAJ3974RK7
 SJD8776RZ2
 
-15 on flight: KJR6646J. IAH -> BKK. Departure Time: 17:26:43. Arrival Time: 01:34:43. Flight duration: 1928 minutes.
+15 on flight: KJR6646J. IAH (HOUSTON) -> BKK (BANGKOK). Departure Time: 17:26:43. Arrival Time: 01:34:43. Flight duration: 1928 minutes.
 HCA3159QA6
 WBE6936NU3
 XFG5747ZT9
@@ -59,7 +59,7 @@ POP2876LH2
 PUD8210OG3
 KKP5277HZ5
 
-11 on flight: RPG3351U. HND -> CAN. Departure Time: 16:59:29. Arrival Time: 23:13:29. Flight duration: 374 minutes.
+11 on flight: RPG3351U. HND (TOKYO) -> CAN (GUANGZHOU). Departure Time: 16:59:29. Arrival Time: 23:13:29. Flight duration: 374 minutes.
 PAJ3974RK1
 JBE2302VO1
 HCA3158QA1
@@ -72,7 +72,7 @@ EZC9678QI2
 SJD8775RZ2
 VZY2993ME2
 
-12 on flight: VYW5940P. LAS -> SIN. Departure Time: 17:26:43. Arrival Time: 00:09:43. Flight duration: 1843 minutes.
+12 on flight: VYW5940P. LAS (LAS VEGAS) -> SIN (SINGAPORE). Departure Time: 17:26:43. Arrival Time: 00:09:43. Flight duration: 1843 minutes.
 EZC9679QI6
 CKZ3133BR4
 UES9152GS5
@@ -86,7 +86,7 @@ PIT2755XC6
 DAZ3030XA5
 BWI0521BG2
 
-11 on flight: ATT7791R. AMS -> DEN. Departure Time: 17:13:14. Arrival Time: 09:54:14. Flight duration: 1001 minutes.
+11 on flight: ATT7791R. AMS (AMSTERDAM) -> DEN (DENVER). Departure Time: 17:13:14. Arrival Time: 09:54:14. Flight duration: 1001 minutes.
 DAZ3029XA6
 EDV2089LK2
 BWI0520BG5
@@ -99,7 +99,7 @@ WBE6935NU4
 UES9151GS5
 ONL0812DH6
 
-6 on flight: HUR0974O. DEN -> PVG. Departure Time: 17:15:25. Arrival Time: 16:33:25. Flight duration: 1398 minutes.
+6 on flight: HUR0974O. DEN (DENVER) -> PVG (SHANGHAI). Departure Time: 17:15:25. Arrival Time: 16:33:25. Flight duration: 1398 minutes.
 CKZ3133BR1
 PUD8209OG8
 CYJ0225CH7
@@ -107,7 +107,7 @@ XFG5747ZT6
 JJM4725RF0
 EDV2089LK5
 
-9 on flight: HZT2506M. IAH -> AMS. Departure Time: 17:12:04. Arrival Time: 10:36:04. Flight duration: 1044 minutes.
+9 on flight: HZT2506M. IAH (HOUSTON) -> AMS (AMSTERDAM). Departure Time: 17:12:04. Arrival Time: 10:36:04. Flight duration: 1044 minutes.
 POP2875LH7
 JBE2302VO4
 BWI0520BG4
@@ -118,7 +118,7 @@ CKZ3132BR7
 CDC0302NN2
 KKP5277HZ2
 
-10 on flight: VDC9164W. FCO -> LAS. Departure Time: 17:18:18. Arrival Time: 14:34:18. Flight duration: 1276 minutes.
+10 on flight: VDC9164W. FCO (ROME) -> LAS (LAS VEGAS). Departure Time: 17:18:18. Arrival Time: 14:34:18. Flight duration: 1276 minutes.
 DAZ3029XA9
 WYU2010YH8
 SPR4485HA0
@@ -130,7 +130,7 @@ SJD8775RZ9
 KKP5277HZ4
 MXU9187YC9
 
-6 on flight: EWH6301Y. CAN -> DFW. Departure Time: 17:22:47. Arrival Time: 21:25:47. Flight duration: 1683 minutes.
+6 on flight: EWH6301Y. CAN (GUANGZHOU) -> DFW (DALLAS/FORT WORTH). Departure Time: 17:22:47. Arrival Time: 21:25:47. Flight duration: 1683 minutes.
 VZY2993ME8
 BWI0520BG9
 LLZ3798PE8
@@ -138,7 +138,7 @@ EZC9679QI2
 DAZ3030XA1
 HGO4351KK2
 
-17 on flight: WSK1289Z. CLT -> DEN. Departure Time: 16:59:02. Arrival Time: 21:37:02. Flight duration: 278 minutes.
+17 on flight: WSK1289Z. CLT (CHARLOTTE) -> DEN (DENVER). Departure Time: 16:59:02. Arrival Time: 21:37:02. Flight duration: 278 minutes.
 CKZ3132BR1
 CYJ0225CH0
 SPR4484HA1
@@ -157,7 +157,7 @@ CXN7304ER1
 EZC9678QI1
 JJM4724RF0
 
-10 on flight: TMV7633W. CGK -> DXB. Departure Time: 17:05:58. Arrival Time: 07:14:58. Flight duration: 849 minutes.
+10 on flight: TMV7633W. CGK (JAKARTA) -> DXB (DUBAI). Departure Time: 17:05:58. Arrival Time: 07:14:58. Flight duration: 849 minutes.
 HCA3158QA5
 DAZ3029XA4
 WTC9125IE3
@@ -169,7 +169,7 @@ ONL0812DH5
 LLZ3798PE2
 VZY2993ME3
 
-14 on flight: PME8178S. DEN -> PEK. Departure Time: 17:13:29. Arrival Time: 15:15:29. Flight duration: 1322 minutes.
+14 on flight: PME8178S. DEN (DENVER) -> PEK (BEIJING). Departure Time: 17:13:29. Arrival Time: 15:15:29. Flight duration: 1322 minutes.
 HGO4350KK6
 JJM4724RF7
 CXN7304ER6
@@ -185,7 +185,7 @@ KKP5277HZ3
 WYU2010YH5
 HCA3158QA8
 
-14 on flight: XOY7948U. ATL -> LHR. Departure Time: 17:07:18. Arrival Time: 07:44:18. Flight duration: 877 minutes.
+14 on flight: XOY7948U. ATL (ATLANTA) -> LHR (LONDON). Departure Time: 17:07:18. Arrival Time: 07:44:18. Flight duration: 877 minutes.
 HCA3158QA6
 EZC9678QI6
 WTC9125IE4
@@ -201,7 +201,7 @@ WYU2010YH4
 CXN7304ER4
 VZY2993ME4
 
-9 on flight: RUM0422W. MUC -> MAD. Departure Time: 16:58:59. Arrival Time: 20:12:59. Flight duration: 194 minutes.
+9 on flight: RUM0422W. MUC (MUNICH) -> MAD (MADRID). Departure Time: 16:58:59. Arrival Time: 20:12:59. Flight duration: 194 minutes.
 YMH6360YP0
 POP2875LH1
 SPR4484HA0
@@ -212,7 +212,7 @@ WBE6935NU0
 EZC9678QI0
 BWI0520BG1
 
-12 on flight: MBA8071P. KUL -> PEK. Departure Time: 17:04:16. Arrival Time: 02:36:16. Flight duration: 572 minutes.
+12 on flight: MBA8071P. KUL (KUALA LUMPUR) -> PEK (BEIJING). Departure Time: 17:04:16. Arrival Time: 02:36:16. Flight duration: 572 minutes.
 LLZ3798PE0
 PAJ3974RK2
 PUD8209OG2
@@ -226,7 +226,7 @@ ONL0812DH3
 JJM4724RF2
 SPR4484HA3
 
-19 on flight: XXQ4064B. JFK -> FRA. Departure Time: 17:05:17. Arrival Time: 06:27:17. Flight duration: 802 minutes.
+19 on flight: XXQ4064B. JFK (NEW YORK) -> FRA (FRANKFURT). Departure Time: 17:05:17. Arrival Time: 06:27:17. Flight duration: 802 minutes.
 LLZ3798PE1
 HCA3158QA3
 CKZ3132BR3
@@ -247,7 +247,7 @@ SJD8775RZ4
 XFG5747ZT2
 WYU2010YH2
 
-17 on flight: GMO5938W. LHR -> PEK. Departure Time: 17:11:57. Arrival Time: 10:48:57. Flight duration: 1057 minutes.
+17 on flight: GMO5938W. LHR (LONDON) -> PEK (BEIJING). Departure Time: 17:11:57. Arrival Time: 10:48:57. Flight duration: 1057 minutes.
 EZC9678QI7
 JBE2302VO3
 CYJ0225CH3
@@ -266,7 +266,7 @@ CXN7304ER5
 JJM4724RF5
 HCA3158QA7
 
-14 on flight: SOH3431A. ORD -> MIA. Departure Time: 17:00:49. Arrival Time: 21:10:49. Flight duration: 250 minutes.
+14 on flight: SOH3431A. ORD (CHICAGO) -> MIA (MIAMI). Departure Time: 17:00:49. Arrival Time: 21:10:49. Flight duration: 250 minutes.
 JBE2302VO2
 HGO4350KK2
 DAZ3029XA1
@@ -282,7 +282,7 @@ JJM4724RF1
 SJD8775RZ3
 WYU2010YH1
 
-16 on flight: SQU6245R. DEN -> FRA. Departure Time: 17:14:20. Arrival Time: 10:43:20. Flight duration: 1049 minutes.
+16 on flight: SQU6245R. DEN (DENVER) -> FRA (FRANKFURT). Departure Time: 17:14:20. Arrival Time: 10:43:20. Flight duration: 1049 minutes.
 DAZ3029XA8
 HGO4350KK7
 JBE2302VO5
@@ -300,7 +300,7 @@ MXU9187YC6
 LLZ3798PE4
 HCA3158QA9
 
-12 on flight: VYU9214I. ORD -> DXB. Departure Time: 17:18:36. Arrival Time: 18:28:36. Flight duration: 1510 minutes.
+12 on flight: VYU9214I. ORD (CHICAGO) -> DXB (DUBAI). Departure Time: 17:18:36. Arrival Time: 18:28:36. Flight duration: 1510 minutes.
 IEG9308EA7
 PUD8210OG0
 HCA3159QA2
@@ -314,7 +314,7 @@ ONL0812DH7
 POP2875LH9
 EDV2089LK6
 
-9 on flight: XIL3623J. PEK -> LAX. Departure Time: 17:13:34. Arrival Time: 14:55:34. Flight duration: 1302 minutes.
+9 on flight: XIL3623J. PEK (BEIJING) -> LAX (LOS ANGELES). Departure Time: 17:13:34. Arrival Time: 14:55:34. Flight duration: 1302 minutes.
 EDV2089LK4
 DAZ3029XA7
 CYJ0225CH5
@@ -325,7 +325,7 @@ CDC0302NN4
 LLZ3798PE3
 YMH6360YP7
 
-17 on flight: JVY9791G. PVG -> FCO. Departure Time: 17:16:01. Arrival Time: 13:05:01. Flight duration: 1189 minutes.
+17 on flight: JVY9791G. PVG (SHANGHAI) -> FCO (ROME). Departure Time: 17:16:01. Arrival Time: 13:05:01. Flight duration: 1189 minutes.
 BWI0520BG7
 CKZ3133BR2
 HGO4350KK9
@@ -344,7 +344,7 @@ LLZ3798PE6
 MXU9187YC8
 EZC9679QI0
 
-10 on flight: MOO1786A. MAD -> FRA. Departure Time: 16:56:48. Arrival Time: 20:00:48. Flight duration: 184 minutes.
+10 on flight: MOO1786A. MAD (MADRID) -> FRA (FRANKFURT). Departure Time: 16:56:48. Arrival Time: 20:00:48. Flight duration: 184 minutes.
 WTC9125IE0
 SJD8775RZ0
 PAJ3974RK0
@@ -356,7 +356,7 @@ JBE2302VO0
 BWI0520BG0
 CXN7304ER0
 
-8 on flight: WPW9201U. DFW -> PEK. Departure Time: 17:21:09. Arrival Time: 17:33:09. Flight duration: 1452 minutes.
+8 on flight: WPW9201U. DFW (DALLAS/FORT WORTH) -> PEK (BEIJING). Departure Time: 17:21:09. Arrival Time: 17:33:09. Flight duration: 1452 minutes.
 WBE6935NU9
 UES9152GS1
 CXN7304ER9
@@ -366,7 +366,7 @@ WTC9125IE8
 HGO4351KK1
 JJM4725RF1
 
-12 on flight: DAU2617A. CGK -> SFO. Departure Time: 17:23:06. Arrival Time: 23:34:06. Flight duration: 1811 minutes.
+12 on flight: DAU2617A. CGK (JAKARTA) -> SFO (SAN FRANCISCO). Departure Time: 17:23:06. Arrival Time: 23:34:06. Flight duration: 1811 minutes.
 LLZ3799PE0
 WBE6936NU1
 YMH6361YP1
@@ -380,7 +380,7 @@ SJD8776RZ1
 WYU2011YH1
 CXN7305ER1
 
-18 on flight: ULZ8130D. CAN -> DFW. Departure Time: 17:23:03. Arrival Time: 21:26:03. Flight duration: 1683 minutes.
+18 on flight: ULZ8130D. CAN (GUANGZHOU) -> DFW (DALLAS/FORT WORTH). Departure Time: 17:23:03. Arrival Time: 21:26:03. Flight duration: 1683 minutes.
 WBE6936NU0
 HCA3159QA3
 SPR4485HA1
@@ -400,7 +400,7 @@ SJD8776RZ0
 WYU2011YH0
 ONL0812DH8
 
-15 on flight: YZO4444S. BKK -> MIA. Departure Time: 17:28:50. Arrival Time: 03:15:50. Flight duration: 2027 minutes.
+15 on flight: YZO4444S. BKK (BANGKOK) -> MIA (MIAMI). Departure Time: 17:28:50. Arrival Time: 03:15:50. Flight duration: 2027 minutes.
 LLZ3799PE2
 CKZ3133BR5
 WBE6936NU4
@@ -417,10 +417,10 @@ EDV2090LK5
 MXU9188YC1
 VZY2994ME0
 
-1 on flight: PNE8178S. DEN -> PEK. Departure Time: 17:13:29. Arrival Time: 15:15:29. Flight duration: 1322 minutes.
+1 on flight: PNE8178S. DEN (DENVER) -> PEK (BEIJING). Departure Time: 17:13:29. Arrival Time: 15:15:29. Flight duration: 1322 minutes.
 MXU9187YC5
 
-10 on flight: DKZ3042O. MIA -> SFO. Departure Time: 17:05:27. Arrival Time: 02:03:27. Flight duration: 538 minutes.
+10 on flight: DKZ3042O. MIA (MIAMI) -> SFO (SAN FRANCISCO). Departure Time: 17:05:27. Arrival Time: 02:03:27. Flight duration: 538 minutes.
 PUD8209OG4
 EZC9678QI5
 HCA3158QA4
