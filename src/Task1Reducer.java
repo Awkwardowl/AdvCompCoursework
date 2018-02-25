@@ -8,16 +8,21 @@ public class Task1Reducer extends Thread {
     ArrayList<String> NotIncluded;
     String[][] Names;
     PrintWriter writer ;
+    String RValue;
+
+    public String getRValue() { return RValue; }
 
     public ArrayList<String> getNotIncluded() { return NotIncluded; }
 
-    public Task1Reducer(String keyI, ArrayList<String[]> dataI, ArrayList<String> NotIncludedI, PrintWriter writerI, String[][] ListOfAirportNames)
+    public Task1Reducer(String keyI, ArrayList<String[]> dataI, String[][] ListOfAirportNames)
     {
         key = keyI;
         data = dataI;
-        NotIncluded = NotIncludedI;
-        writer = writerI;
         Names = ListOfAirportNames;
+    }
+
+    public String getKey() {
+        return key;
     }
 
     @Override
@@ -34,10 +39,10 @@ public class Task1Reducer extends Thread {
             {
                 if (key.equals(Names[1][i]))
                 {
-                    writer.println("Their were "+ ReduceHMap.size()+" flights from "+ key + " ("+Names[0][i]+")");
+                   RValue="Their were "+ ReduceHMap.size()+" flights from "+ key + " ("+Names[0][i]+")";
                 }
             }
-            NotIncluded.add(key);
+            //NotIncluded.add(key);
 //            writer.println("Their were "+ ReduceHMap.size()+" flights from "+ key);
 
     }

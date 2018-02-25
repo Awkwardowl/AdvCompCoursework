@@ -54,7 +54,7 @@ public class AdvComp {
         for (String Key:HMap.keySet())
         {
             ArrayList<String[]> Value = HMap.get(Key);
-            Task1Reducer Reduce = new Task1Reducer(Key, Value, AirPortsUsed, writer,ListOfAirportsArray);
+            Task1Reducer Reduce = new Task1Reducer(Key, Value,ListOfAirportsArray);
             Reduce.start();
             T1Reducers.add(Reduce);
         }
@@ -62,6 +62,8 @@ public class AdvComp {
         for (int i=0; i<=T1Reducers.size()-1; i++)
         {
             T1Reducers.get(i).join();
+            AirPortsUsed.add(T1Reducers.get(i).getKey());
+            writer.println(T1Reducers.get(i).getRValue());
         }
 
         String NotUsed = "";
