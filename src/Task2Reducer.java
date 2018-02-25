@@ -63,7 +63,6 @@ public class Task2Reducer extends Thread{
         for (String Key:PassengerCheck.keySet())
         {
             passengers.add(Key);
-//            RValue=RValue +  ("   " +  Key + "\r" );
         }
         RValue=RValue + ("");
     }

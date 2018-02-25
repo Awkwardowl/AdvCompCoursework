@@ -123,7 +123,7 @@ public class AdvComp {
             ArrayList<String> passengers=T2Reducers.get(i).passengers;
             for (int j=0; j<=passengers.size()-1; j++)
             {
-                writer2.println(passengers.get(j));
+                writer2.println("\t"+passengers.get(j));
             }
             writer2.println("");
 
@@ -266,6 +266,11 @@ public class AdvComp {
             {
                 error = true;
                 writer.write("Error: Illegal Flight ID length: \t"+array[1]+"      Discarding row: \t"+x+"\r\n");
+            }
+            else if (array[3].length() != 10 )
+            {
+                error = true;
+                writer.write("Error: Illegal epochtime length: \t"+array[1]+"      Discarding row: \t"+x+"\r\n");
             }
             else if (!(Character.isLetter(array[1].codePointAt(0))&&Character.isUpperCase(array[1].codePointAt(0))))
             {
