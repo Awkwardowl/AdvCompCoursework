@@ -1,7 +1,6 @@
 import java.io.*;
 import java.util.*;
 import java.util.Arrays;
-import java.util.stream.Collectors;
 
 public class AdvComp {
 
@@ -20,33 +19,30 @@ public class AdvComp {
         String ListOfAirportsArray [][] = getAirports();
         String ListOfAirportsCode[] = ListOfAirportsArray[1];
         String ListOfAirportsName[] = ListOfAirportsArray[0];
-        System.out.println();
 
         Data = GetDataFromCSV(Data,ListOfAirportsCode);
+
         ArrayList<String[]> Data2 = new ArrayList<>();
+
         Data2.addAll(Data);
-        System.out.println("");
+
         List<String[]> DataA = Data.subList(0,(Data2.size()/2));
         List<String[]> DataB = Data.subList(Data2.size()/2,Data2.size());
 
         Task1Mapper TaskObj1 = new Task1Mapper(DataA);
         Task1Mapper TaskObj1B = new Task1Mapper(DataB);
+
         TaskObj1.start();
         TaskObj1B.start();
+
         TaskObj1.join();
         TaskObj1B.join();
 
         Mapper1.addAll(TaskObj1.getMapper());
         Mapper1.addAll(TaskObj1B.getMapper());
 
-        HMap = CreateHashMapT1(HMap, Mapper1);
-//        LinkedHashMap <String, String[]> sortedHMap = new LinkedHashMap<String, String[]>(HMap);
-//        sortedHMap.putAll(HMap);
-//        SortedMap <String, String[]> sortedHMap = new Map<String, String[]>(HMap);
+        HMap = Task1Shuffler(HMap, Mapper1);
 
-
-//      String ListOfAirportsArray [] = {"AMS","ATL","BKK","CAN","CDG","CGK","CLT","DEN","DFW","DXB","FCO","FRA","HKG","HND","IAH","IST","JFK","KUL","LAS","LAX","LHR","MAD","MIA","MUC","ORD","PEK","PHX","PVG","SFO","SIN"};
-//        String OneDListOfAirports[] = ListOfAirportsArray[0];
         ArrayList<String> ListOfAirports = new ArrayList<>(Arrays.asList(ListOfAirportsCode));
         ArrayList<String> ListOfAirportsNames = new ArrayList<>(Arrays.asList(ListOfAirportsName));
 
@@ -78,7 +74,6 @@ public class AdvComp {
                 }else{
                     NotUsed = NotUsed + ", " +ListOfAirports.get(i)+"("+ListOfAirportsNames.get(i)+")";
                 }
-
             }
         }
 
@@ -87,24 +82,25 @@ public class AdvComp {
         writer.println();
         writer.close();
 
-
-
         List<String[]> Data2A = Data2.subList(0,(Data2.size()/2));
         List<String[]> Data2B = Data2.subList(Data2.size()/2,Data2.size());
 
         Task2Mapper TaskObj2 = new Task2Mapper(Data2A);
         Task2Mapper TaskObj2B = new Task2Mapper(Data2B);
+
         TaskObj2.start();
         TaskObj2B.start();
+
         TaskObj2.join();
         TaskObj2B.join();
 
         Mapper2.addAll(TaskObj2.getMapper());
         Mapper2.addAll(TaskObj2B.getMapper());
 
-        HMap2 = CreateHashMapT2(HMap2, Mapper2);
+        HMap2 = Task2Shuffler(HMap2, Mapper2);
 
         ArrayList<Task2Reducer> T2Reducers = new ArrayList<>();
+
         PrintWriter writer2 = new PrintWriter("ObjectiveTwo.txt", "UTF-8");
 
         for (String Key:HMap2.keySet())
@@ -133,11 +129,6 @@ public class AdvComp {
 
         PrintWriter writer3 = new PrintWriter("ObjectiveThree.txt", "UTF-8");
 
-//        for (String Key:HMap2.keySet())
-//        {
-//            ArrayList<String[]> Value = HMap2.get(Key);
-//            ReduceTask3(Key, Value,writer3);
-//        }
         ArrayList<Task3Reducer> T3Reducers = new ArrayList<>();
 
         for (String Key:HMap2.keySet())
@@ -155,8 +146,6 @@ public class AdvComp {
             writer3.println(T3Reducers.get(i).getRValue());
 
         }
-
-
         writer3.close();
     }
 
@@ -172,9 +161,8 @@ public class AdvComp {
         String [] array = newLine.split(",");
         if (array[0].equals("")||array[1].equals("")||array[2].equals("")||array[3].equals("")||array[4].equals("")||array[5].equals(""))
         {
-            writer.write("Error: Null field found.                           Discarding row:  "+x+"\r\n");
+            writer.write("Error: Null field found.                               Discarding row:  "+x+"\r\n");
             x++;
-//            System.out.println("Error: Null Field Found, Discarding Row "+ x);
         }
         else
         {
@@ -183,9 +171,9 @@ public class AdvComp {
             if ( Length != array[0].length())
             {
                 writer.write("Error: Hidden character found in:\t"+array[0]+",    Correcting row: \t"+x+"\r\n");
-//               array[0]=array[0].substring(1);
+
             }
-//            System.out.println("");
+
             boolean error = false;
             if (!(Character.isLetter(array[0].codePointAt(0))&&Character.isUpperCase(array[0].codePointAt(0))))
             {
@@ -314,8 +302,6 @@ public class AdvComp {
                 writer.write("Error: Disallowed character found: \t"+array[1]+",      Discarding row: \t"+x+"\r\n");
             }
 
-
-//                String ListOfAirportsCode [] = {"AMS","ATL","BKK","CAN","CDG","CGK","CLT","DEN","DFW","DXB","FCO","FRA","HKG","HND","IAH","IST","JFK","KUL","LAS","LAX","LHR","MAD","MIA","MUC","ORD","PEK","PHX","PVG","SFO","SIN"};
                 ArrayList<String> ListOfAirports = new ArrayList<>(Arrays.asList(ListOfAirportsCode));
 
                 for (int i=0; i<=ListOfAirportsCode.length; i++)
@@ -338,9 +324,6 @@ public class AdvComp {
                     }
                 }
 
-
-
-
             String[] Row = new String[8];
             Row[0]=array[0];
             Row[1]=array[1];
@@ -354,17 +337,16 @@ public class AdvComp {
                 Data.add(Row);
             }
             x++;
-
         }
 
         }
         br.close();
         writer.close();
-        //System.out.println("");
+
         return Data;
     }
 
-    public static HashMap<String,  ArrayList<String[]>> CreateHashMapT1(HashMap<String,  ArrayList<String[]>> HMap, ArrayList<Task1JobObject> Mapper ) throws IOException
+    public static HashMap<String,  ArrayList<String[]>> Task1Shuffler(HashMap<String,  ArrayList<String[]>> HMap, ArrayList<Task1JobObject> Mapper ) throws IOException
     {
         Task1JobObject Single = null;
 
@@ -375,7 +357,7 @@ public class AdvComp {
 
             if( HMap.size()==0)
             {
-                ArrayList<String[]> Payload = new ArrayList<String[]>();
+                ArrayList<String[]> Payload = new ArrayList<>();
                 Payload.add(Single.Payload);
                 HMap.put(Single.KeyDeparture, Payload);
             }
@@ -383,7 +365,7 @@ public class AdvComp {
             {
                 for (int j =0; j <= HMap.size(); j++)
                 {
-                    ArrayList<String[]> Payload = new ArrayList<String[]>();
+                    ArrayList<String[]> Payload = new ArrayList<>();
                     if (HMap.containsKey(Single.KeyDeparture))
                     {
                         Payload = HMap.get(Single.KeyDeparture);
@@ -404,7 +386,7 @@ public class AdvComp {
         return HMap;
     }
 
-    public static HashMap<String,  ArrayList<String[]>> CreateHashMapT2(HashMap<String,  ArrayList<String[]>> HMap, ArrayList<Task2JobObject> Mapper ) throws IOException
+    public static HashMap<String,  ArrayList<String[]>> Task2Shuffler(HashMap<String,  ArrayList<String[]>> HMap, ArrayList<Task2JobObject> Mapper ) throws IOException
     {
         Task2JobObject Single = null;
 
@@ -415,7 +397,7 @@ public class AdvComp {
 
             if( HMap.size()==0)
             {
-                ArrayList<String[]> Payload = new ArrayList<String[]>();
+                ArrayList<String[]> Payload = new ArrayList<>();
                 Payload.add(Single.Payload);
                 HMap.put(Single.FlightIDDeparture, Payload);
             }
@@ -423,7 +405,7 @@ public class AdvComp {
             {
                 for (int j =0; j <= HMap.size(); j++)
                 {
-                    ArrayList<String[]> Payload = new ArrayList<String[]>();
+                    ArrayList<String[]> Payload = new ArrayList<>();
                     if (HMap.containsKey(Single.FlightIDDeparture))
                     {
                         Payload = HMap.get(Single.FlightIDDeparture);
