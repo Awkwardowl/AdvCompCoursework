@@ -26,20 +26,21 @@ public class AdvComp {
 
         Data2.addAll(Data);
 
-        List<String[]> DataA = Data.subList(0,(Data2.size()/2));
-        List<String[]> DataB = Data.subList(Data2.size()/2,Data2.size());
+        ArrayList<Task1Mapper> T1Mapper = new ArrayList<>();
 
-        Task1Mapper TaskObj1 = new Task1Mapper(DataA);
-        Task1Mapper TaskObj1B = new Task1Mapper(DataB);
+        for (int i=0; i<Data.size()-1; i++)
+        {
+            List<String[]> row = Data.subList(i, i+1);
+            Task1Mapper mapper1 = new Task1Mapper(row);
+            mapper1.start();
+            T1Mapper.add(mapper1);
+        }
 
-        TaskObj1.start();
-        TaskObj1B.start();
-
-        TaskObj1.join();
-        TaskObj1B.join();
-
-        Mapper1.addAll(TaskObj1.getMapper());
-        Mapper1.addAll(TaskObj1B.getMapper());
+        for (int i=0; i<=T1Mapper.size()-1; i++)
+        {
+            T1Mapper.get(i).join();
+            Mapper1.addAll( T1Mapper.get(i).getMapper());
+        }
 
         HMap = Task1Shuffler(HMap, Mapper1);
 
@@ -82,20 +83,21 @@ public class AdvComp {
         writer.println();
         writer.close();
 
-        List<String[]> Data2A = Data2.subList(0,(Data2.size()/2));
-        List<String[]> Data2B = Data2.subList(Data2.size()/2,Data2.size());
+        ArrayList<Task2Mapper> T2Mapper = new ArrayList<>();
 
-        Task2Mapper TaskObj2 = new Task2Mapper(Data2A);
-        Task2Mapper TaskObj2B = new Task2Mapper(Data2B);
+        for (int i=0; i<Data.size()-1; i++)
+        {
+            List<String[]> row = Data.subList(i, i+1);
+            Task2Mapper mapper2 = new Task2Mapper(row);
+            mapper2.start();
+            T2Mapper.add(mapper2);
+        }
 
-        TaskObj2.start();
-        TaskObj2B.start();
-
-        TaskObj2.join();
-        TaskObj2B.join();
-
-        Mapper2.addAll(TaskObj2.getMapper());
-        Mapper2.addAll(TaskObj2B.getMapper());
+        for (int i=0; i<=T1Mapper.size()-1; i++)
+        {
+            T2Mapper.get(i).join();
+            Mapper2.addAll( T2Mapper.get(i).getMapper());
+        }
 
         HMap2 = Task2Shuffler(HMap2, Mapper2);
 

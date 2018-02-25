@@ -16,7 +16,6 @@ public class Task2Mapper extends Thread {
     }
 
     @Override
-
     public void run() {
         for(String[] array:Data)
         {
