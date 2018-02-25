@@ -1,7 +1,4 @@
-import com.sun.org.apache.regexp.internal.RE;
-
 import java.io.*;
-import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.Arrays;
 
@@ -78,7 +75,7 @@ public class AdvComp {
         writer.println();
         writer.close();
 
-        PrintWriter writer2 = new PrintWriter("ObjectiveTwo.txt", "UTF-8");
+
 
         List<String[]> Data2A = Data2.subList(0,(Data2.size()/2));
         List<String[]> Data2B = Data2.subList(Data2.size()/2,Data2.size());
@@ -94,20 +91,60 @@ public class AdvComp {
         Mapper2.addAll(TaskObj2B.getMapper());
 
         HMap2 = CreateHashMapT2(HMap2, Mapper2);
+
+        ArrayList<Task2Reducer> T2Reducers = new ArrayList<>();
+        PrintWriter writer2 = new PrintWriter("ObjectiveTwo.txt", "UTF-8");
+
         for (String Key:HMap2.keySet())
         {
             ArrayList<String[]> Value = HMap2.get(Key);
-            ReduceTask2(Key, Value, writer2);
+            Task2Reducer Reduce2 = new Task2Reducer(Key, Value);
+            Reduce2.start();
+            T2Reducers.add(Reduce2);
         }
+
+        for (int i=0; i<=T2Reducers.size()-1; i++)
+        {
+            T2Reducers.get(i).join();
+
+            writer2.println(T2Reducers.get(i).getRValue());
+            ArrayList<String> passengers=T2Reducers.get(i).passengers;
+            for (int j=0; j<=passengers.size()-1; j++)
+            {
+                writer2.println(passengers.get(j));
+            }
+            writer2.println("");
+
+        }
+
         writer2.close();
 
         PrintWriter writer3 = new PrintWriter("ObjectiveThree.txt", "UTF-8");
 
+//        for (String Key:HMap2.keySet())
+//        {
+//            ArrayList<String[]> Value = HMap2.get(Key);
+//            ReduceTask3(Key, Value,writer3);
+//        }
+        ArrayList<Task3Reducer> T3Reducers = new ArrayList<>();
+
         for (String Key:HMap2.keySet())
         {
             ArrayList<String[]> Value = HMap2.get(Key);
-            ReduceTask3(Key, Value,writer3);
+            Task3Reducer Reduce3 = new Task3Reducer(Key, Value);
+            Reduce3.start();
+            T3Reducers.add(Reduce3);
         }
+
+        for (int i=0; i<=T2Reducers.size()-1; i++)
+        {
+            T3Reducers.get(i).join();
+
+            writer3.println(T3Reducers.get(i).getRValue());
+
+        }
+
+
         writer3.close();
     }
 
@@ -410,47 +447,47 @@ public class AdvComp {
 //        return NotIncluded;
 //    }
 
-    public static void ReduceTask2(String key, ArrayList<String[]> data,PrintWriter writer3 )
-    {
-        String TempStringA [] = data.get(0);
-        SimpleDateFormat hhmmss;
-        //hhmmss = new SimpleDateFormat("hh:mm:ss");
-        Date Departure = new Date(Long.parseLong(TempStringA[3])*1000);
-        Date Arrival = new Date(Long.parseLong(TempStringA[3])*1000+ Long.parseLong(TempStringA[4])*60*1000);
+//    public static void ReduceTask2(String key, ArrayList<String[]> data,PrintWriter writer3 )
+//    {
+//        String TempStringA [] = data.get(0);
+//        SimpleDateFormat hhmmss;
+//        //hhmmss = new SimpleDateFormat("hh:mm:ss");
+//        Date Departure = new Date(Long.parseLong(TempStringA[3])*1000);
+//        Date Arrival = new Date(Long.parseLong(TempStringA[3])*1000+ Long.parseLong(TempStringA[4])*60*1000);
+//
+//        HashMap<String,String> PassengerCheck = new HashMap<String,String>();
+//
+//        for (int i=0; i<=data.size()-1; i++)
+//        {
+//            String[] hold = data.get(i);
+//            PassengerCheck.put(hold[0],"");
+//        }
+//
+////        System.out.println(data.size() +" Flight: "+key+". "+  TempStringA[1] + " -> "+TempStringA[2] +". Departure Time: "+ hhmmss.format(Departure) + ". Arrival Time: "+hhmmss.format(Arrival) +". Flight duration: " +TempStringA[4] + " minutes.");
+//        writer3.println(PassengerCheck.size() +" Flight: "+key+". "+  TempStringA[1] + " -> "+TempStringA[2] +". Departure Time: "+ (Departure) + ". Arrival Time: "+(Arrival) +". Flight duration: " +TempStringA[4] + " minutes.");
+//
+//
+//            for (String Key:PassengerCheck.keySet())
+//            {
+//                writer3.println("\t" +  Key );
+//            }
+//
+//        writer3.println("");
+//
+//    }
 
-        HashMap<String,String> PassengerCheck = new HashMap<String,String>();
-
-        for (int i=0; i<=data.size()-1; i++)
-        {
-            String[] hold = data.get(i);
-            PassengerCheck.put(hold[0],"");
-        }
-
-//        System.out.println(data.size() +" Flight: "+key+". "+  TempStringA[1] + " -> "+TempStringA[2] +". Departure Time: "+ hhmmss.format(Departure) + ". Arrival Time: "+hhmmss.format(Arrival) +". Flight duration: " +TempStringA[4] + " minutes.");
-        writer3.println(PassengerCheck.size() +" Flight: "+key+". "+  TempStringA[1] + " -> "+TempStringA[2] +". Departure Time: "+ (Departure) + ". Arrival Time: "+(Arrival) +". Flight duration: " +TempStringA[4] + " minutes.");
-
-
-            for (String Key:PassengerCheck.keySet())
-            {
-                writer3.println("\t" +  Key );
-            }
-
-        writer3.println("");
-
-    }
-
-    public static void ReduceTask3(String key, ArrayList<String[]> data, PrintWriter writer2 )
-    {
-        ArrayList<String[]> Temp = new ArrayList<String[]>();
-        HashMap<String,String> PassengerCheck = new HashMap<String,String>();
-
-        for (int i=0; i<=data.size()-1; i++)
-        {
-            String[] hold = data.get(i);
-            PassengerCheck.put(hold[0],"");
-        }
-
-        writer2.println( PassengerCheck.size()+"\tpassengers on flightID -->"+"\t" + key);
-
-    }
+//    public static void ReduceTask3(String key, ArrayList<String[]> data, PrintWriter writer2 )
+//    {
+//        ArrayList<String[]> Temp = new ArrayList<String[]>();
+//        HashMap<String,String> PassengerCheck = new HashMap<String,String>();
+//
+//        for (int i=0; i<=data.size()-1; i++)
+//        {
+//            String[] hold = data.get(i);
+//            PassengerCheck.put(hold[0],"");
+//        }
+//
+//        writer2.println( PassengerCheck.size()+"\tpassengers on flightID -->"+"\t" + key);
+//
+//    }
 }
