@@ -1,0 +1,41 @@
+Error: Null field found in airport file:               Discarding row:  29
+Error: Hidden character found in:	UES9151GS7     Correcting row: 	1
+Error: Disallowed character found: 	MBw8071P       Discarding row: 	6
+Error: Null field found in Data file:                  Discarding row:  9
+Error: Disallowed character found: 	UES915*GS7     Discarding row: 	26
+Error: Disallowed character found: 	GMO593[W       Discarding row: 	41
+Error: Disallowed character found: 	4QU6245R       Discarding row: 	47
+Error: Null field found in Data file:                  Discarding row:  53
+Error: Illegal airport detected: 	UGK            Discarding row: 	55
+Error: Disallowed character found: 	XXQ4064%       Discarding row: 	59
+Error: Disallowed character found: 	SJD87|76RZ0    Discarding row: 	95
+Error: Illegal airport detected: 	[AS            Discarding row: 	126
+Error: Null field found in Data file:                  Discarding row:  154
+Error: Disallowed character found: 	CKZ313\BR9     Discarding row: 	171
+Error: Disallowed character found: 	A;S            Discarding row: 	204
+Error: Null field found in Data file:                  Discarding row:  237
+Error: Disallowed character found: 	VDCP164W       Discarding row: 	262
+Error: Null field found in Data file:                  Discarding row:  281
+Error: Disallowed character found: 	AM%            Discarding row: 	282
+Error: Illegal airport detected: 	:IN            Discarding row: 	304
+Error: Illegal airport detected: 	]RA            Discarding row: 	312
+Error: Null field found in Data file:                  Discarding row:  327
+Error: Illegal airport detected: 	#MS            Discarding row: 	338
+Error: Disallowed character found: 	WBE6935NU$     Discarding row: 	361
+Error: Disallowed character found: 	WYu2011YH2     Discarding row: 	362
+Error: Illegal airport detected: 	MI^            Discarding row: 	371
+Error: Illegal airport detected: 	vAS            Discarding row: 	373
+Error: Disallowed character found: 	OR8            Discarding row: 	382
+Error: Null field found in Data file:                  Discarding row:  385
+Error: Illegal airport detected: 	SI|            Discarding row: 	387
+Error: Illegal airport detected: 	FSA            Discarding row: 	409
+Error: Illegal airport detected: 	L}X            Discarding row: 	432
+Error: Disallowed character found: 	PEe            Discarding row: 	441
+Error: Null field found in Data file:                  Discarding row:  453
+Error: Illegal airport detected: 	;AD            Discarding row: 	458
+Error: Disallowed character found: 	~AN            Discarding row:	461
+Error: Illegal airport detected: 	yEK            Discarding row: 	494
+Error: Null field found in Data file:                  Discarding row:  498
+Error: Null field found in Data file:                  Discarding row:  500
+Error: Illegal airport detected: 	vEN            Discarding row: 	509
+Error: Null field found in Data file:                  Discarding row:  510
