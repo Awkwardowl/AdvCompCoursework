@@ -2,6 +2,9 @@ import java.io.*;
 import java.util.*;
 import java.util.Arrays;
 
+/**
+ * Main method for MapReduce prototype.
+ */
 public class AdvComp {
 
     public static void main(String[] args) throws IOException, InterruptedException {
@@ -149,6 +152,13 @@ public class AdvComp {
         writer3.close(); //closes the writer file.
     }
 
+    /**This method gets all the data from the .csv. Checking it for error as well as validating the information that can be validated.
+     *
+     * @param Data
+     * @param ListOfAirportsCode Used to validate the airports within the .csv.
+     * @return
+     * @throws IOException
+     */
     public static ArrayList<String[]> GetDataFromCSV(ArrayList<String[]> Data, String[] ListOfAirportsCode) throws IOException
     {
         FileWriter bw = new FileWriter("ErrorLogs.txt", true); //opens the ErrorLog file in amend mode.
@@ -344,6 +354,13 @@ public class AdvComp {
         return Data; //returns the array list of data.
     }
 
+    /**The is the shuffler/sort section for task 1. It turns Key-Value pairs into Key-ListValues.
+     *
+     * @param HMap
+     * @param Mapper List of Key-Values.
+     * @return
+     * @throws IOException
+     */
     public static HashMap<String,  ArrayList<String[]>> Task1Shuffler(HashMap<String,  ArrayList<String[]>> HMap, ArrayList<Task1JobObject> Mapper ) throws IOException
     {
         Task1JobObject Single = null; //temp hold object
@@ -384,6 +401,13 @@ public class AdvComp {
         return HMap; //return the hashmap to main.
     }
 
+    /**The is the shuffler/sort section for task 2 and 3. It turns Key-Value pairs into Key-ListValues.
+     *
+     * @param HMap
+     * @param Mapper
+     * @return
+     * @throws IOException
+     */
     public static HashMap<String,  ArrayList<String[]>> Task2Shuffler(HashMap<String,  ArrayList<String[]>> HMap, ArrayList<Task2JobObject> Mapper ) throws IOException
     {
         Task2JobObject Single = null; //temp hold object
@@ -424,6 +448,11 @@ public class AdvComp {
         return HMap;
     }
 
+    /**
+     * This gets the airport names and codes from the .csv. It checks for validity against the syntax in the assignment brief.
+     * @return
+     * @throws IOException
+     */
     public static String[][] getAirports() throws IOException
     {
         FileWriter bw = new FileWriter("ErrorLogs.txt", false); //creates and opens the errorlogs.txt file
