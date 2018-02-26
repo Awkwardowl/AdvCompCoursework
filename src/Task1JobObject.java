@@ -9,7 +9,7 @@ public class Task1JobObject {
     }
 
     /**
-     * Constructor for job object. Set the keyAttribute and values from passed rows.
+     * Constructor for job object. Sets the keyAttribute and values from passed rows.
      * @param SingleRow
      */
     public Task1JobObject(String[] SingleRow) {

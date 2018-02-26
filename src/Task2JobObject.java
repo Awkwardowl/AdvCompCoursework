@@ -1,5 +1,5 @@
 /**
- * Object to hold Key-Value for Task1
+ * Object to hold Key-Value for Task 2 and 3.
  */
 public class Task2JobObject {
     String FlightIDDeparture; //Key
@@ -9,7 +9,7 @@ public class Task2JobObject {
     }
 
     /**
-     * Constructor for job object. Set the keyAttribute and values from passed rows.
+     * Constructor for job object. Sets the keyAttribute and values from passed rows.
      * @param SingleRow
      */
     public Task2JobObject(String[] SingleRow) {
