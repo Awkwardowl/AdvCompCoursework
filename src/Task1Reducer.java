@@ -39,7 +39,7 @@ public class Task1Reducer extends Thread {
             {
                 if (key.equals(Names[1][i]))
                 {
-                   RValue="Their were "+ ReduceHMap.size()+" flights from "+ key + " ("+Names[0][i]+")";
+                   RValue="There were "+ ReduceHMap.size()+" flights from "+ key + " ("+Names[0][i]+")";
                 }
             }
             //NotIncluded.add(key);
