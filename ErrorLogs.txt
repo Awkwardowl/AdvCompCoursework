@@ -39,3 +39,316 @@ Error: Null field found in Data file:                  Discarding row:  498
 Error: Null field found in Data file:                  Discarding row:  500
 Error: Illegal airport detected: 	vEN            Discarding row: 	509
 Error: Null field found in Data file:                  Discarding row:  510
+Error: Hidden character found in:	UES9151GS7,    Correcting row: 	1
+Error: Disallowed character found: 	MBw8071P,      Discarding row: 	6
+Error: Null field found.                               Discarding row:  9
+Error: Disallowed character found: 	UES915*GS7,    Discarding row: 	26
+Error: Disallowed character found: 	GMO593[W,      Discarding row: 	41
+Error: Disallowed character found: 	4QU6245R,      Discarding row: 	47
+Error: Null field found.                               Discarding row:  53
+Error: Illegal airport detected: 	UGK            Discarding row: 	55
+Error: Disallowed character found: 	XXQ4064%,      Discarding row: 	59
+Error: Disallowed character found: 	SJD87|76RZ0,   Discarding row: 	95
+Error: Illegal airport detected: 	[AS            Discarding row: 	126
+Error: Null field found.                               Discarding row:  154
+Error: Disallowed character found: 	CKZ313\BR9,    Discarding row: 	171
+Error: Disallowed character found: 	A;S,           Discarding row: 	204
+Error: Null field found.                               Discarding row:  237
+Error: Disallowed character found: 	VDCP164W,      Discarding row: 	262
+Error: Null field found.                               Discarding row:  281
+Error: Disallowed character found: 	AM%,           Discarding row: 	282
+Error: Illegal airport detected: 	:IN            Discarding row: 	304
+Error: Illegal airport detected: 	]RA            Discarding row: 	312
+Error: Null field found.                               Discarding row:  327
+Error: Illegal airport detected: 	#MS            Discarding row: 	338
+Error: Disallowed character found: 	WBE6935NU$,    Discarding row: 	361
+Error: Disallowed character found: 	WYu2011YH2,    Discarding row: 	362
+Error: Illegal airport detected: 	MI^            Discarding row: 	371
+Error: Illegal airport detected: 	vAS            Discarding row: 	373
+Error: Disallowed character found: 	OR8,           Discarding row: 	382
+Error: Null field found.                               Discarding row:  385
+Error: Illegal airport detected: 	SI|            Discarding row: 	387
+Error: Illegal airport detected: 	FSA            Discarding row: 	409
+Error: Illegal airport detected: 	L}X            Discarding row: 	432
+Error: Disallowed character found: 	PEe,           Discarding row: 	441
+Error: Null field found.                               Discarding row:  453
+Error: Illegal airport detected: 	;AD            Discarding row: 	458
+Error: Disallowed character found: 	~AN,           Discarding row:	461
+Error: Illegal airport detected: 	yEK            Discarding row: 	494
+Error: Null field found.                               Discarding row:  498
+Error: Null field found.                               Discarding row:  500
+Error: Illegal airport detected: 	vEN            Discarding row: 	509
+Error: Null field found.                               Discarding row:  510
+Error: Hidden character found in:	UES9151GS7,    Correcting row: 	1
+Error: Disallowed character found: 	MBw8071P,      Discarding row: 	6
+Error: Null field found.                               Discarding row:  9
+Error: Disallowed character found: 	UES915*GS7,    Discarding row: 	26
+Error: Disallowed character found: 	GMO593[W,      Discarding row: 	41
+Error: Disallowed character found: 	4QU6245R,      Discarding row: 	47
+Error: Null field found.                               Discarding row:  53
+Error: Illegal airport detected: 	UGK            Discarding row: 	55
+Error: Disallowed character found: 	XXQ4064%,      Discarding row: 	59
+Error: Disallowed character found: 	SJD87|76RZ0,   Discarding row: 	95
+Error: Illegal airport detected: 	[AS            Discarding row: 	126
+Error: Null field found.                               Discarding row:  154
+Error: Disallowed character found: 	CKZ313\BR9,    Discarding row: 	171
+Error: Disallowed character found: 	A;S,           Discarding row: 	204
+Error: Null field found.                               Discarding row:  237
+Error: Disallowed character found: 	VDCP164W,      Discarding row: 	262
+Error: Null field found.                               Discarding row:  281
+Error: Disallowed character found: 	AM%,           Discarding row: 	282
+Error: Illegal airport detected: 	:IN            Discarding row: 	304
+Error: Illegal airport detected: 	]RA            Discarding row: 	312
+Error: Null field found.                               Discarding row:  327
+Error: Illegal airport detected: 	#MS            Discarding row: 	338
+Error: Disallowed character found: 	WBE6935NU$,    Discarding row: 	361
+Error: Disallowed character found: 	WYu2011YH2,    Discarding row: 	362
+Error: Illegal airport detected: 	MI^            Discarding row: 	371
+Error: Illegal airport detected: 	vAS            Discarding row: 	373
+Error: Disallowed character found: 	OR8,           Discarding row: 	382
+Error: Null field found.                               Discarding row:  385
+Error: Illegal airport detected: 	SI|            Discarding row: 	387
+Error: Illegal airport detected: 	FSA            Discarding row: 	409
+Error: Illegal airport detected: 	L}X            Discarding row: 	432
+Error: Disallowed character found: 	PEe,           Discarding row: 	441
+Error: Null field found.                               Discarding row:  453
+Error: Illegal airport detected: 	;AD            Discarding row: 	458
+Error: Disallowed character found: 	~AN,           Discarding row:	461
+Error: Illegal airport detected: 	yEK            Discarding row: 	494
+Error: Null field found.                               Discarding row:  498
+Error: Null field found.                               Discarding row:  500
+Error: Illegal airport detected: 	vEN            Discarding row: 	509
+Error: Null field found.                               Discarding row:  510
+Error: Hidden character found in:	UES9151GS7,    Correcting row: 	1
+Error: Disallowed character found: 	MBw8071P,      Discarding row: 	6
+Error: Null field found.                               Discarding row:  9
+Error: Disallowed character found: 	UES915*GS7,    Discarding row: 	26
+Error: Disallowed character found: 	GMO593[W,      Discarding row: 	41
+Error: Disallowed character found: 	4QU6245R,      Discarding row: 	47
+Error: Null field found.                               Discarding row:  53
+Error: Illegal airport detected: 	UGK            Discarding row: 	55
+Error: Disallowed character found: 	XXQ4064%,      Discarding row: 	59
+Error: Disallowed character found: 	SJD87|76RZ0,   Discarding row: 	95
+Error: Illegal airport detected: 	[AS            Discarding row: 	126
+Error: Null field found.                               Discarding row:  154
+Error: Disallowed character found: 	CKZ313\BR9,    Discarding row: 	171
+Error: Disallowed character found: 	A;S,           Discarding row: 	204
+Error: Null field found.                               Discarding row:  237
+Error: Disallowed character found: 	VDCP164W,      Discarding row: 	262
+Error: Null field found.                               Discarding row:  281
+Error: Disallowed character found: 	AM%,           Discarding row: 	282
+Error: Illegal airport detected: 	:IN            Discarding row: 	304
+Error: Illegal airport detected: 	]RA            Discarding row: 	312
+Error: Null field found.                               Discarding row:  327
+Error: Illegal airport detected: 	#MS            Discarding row: 	338
+Error: Disallowed character found: 	WBE6935NU$,    Discarding row: 	361
+Error: Disallowed character found: 	WYu2011YH2,    Discarding row: 	362
+Error: Illegal airport detected: 	MI^            Discarding row: 	371
+Error: Illegal airport detected: 	vAS            Discarding row: 	373
+Error: Disallowed character found: 	OR8,           Discarding row: 	382
+Error: Null field found.                               Discarding row:  385
+Error: Illegal airport detected: 	SI|            Discarding row: 	387
+Error: Illegal airport detected: 	FSA            Discarding row: 	409
+Error: Illegal airport detected: 	L}X            Discarding row: 	432
+Error: Disallowed character found: 	PEe,           Discarding row: 	441
+Error: Null field found.                               Discarding row:  453
+Error: Illegal airport detected: 	;AD            Discarding row: 	458
+Error: Disallowed character found: 	~AN,           Discarding row:	461
+Error: Illegal airport detected: 	yEK            Discarding row: 	494
+Error: Null field found.                               Discarding row:  498
+Error: Null field found.                               Discarding row:  500
+Error: Illegal airport detected: 	vEN            Discarding row: 	509
+Error: Null field found.                               Discarding row:  510
+Error: Hidden character found in:	UES9151GS7,    Correcting row: 	1
+Error: Illegal flight time     : 	802      Discarding row: 	2
+Error: Illegal flight time     : 	250      Discarding row: 	3
+Error: Illegal flight time     : 	250      Discarding row: 	4
+Error: Illegal flight time     : 	572      Discarding row: 	6
+Error: Illegal flight time     : 	184      Discarding row: 	7
+Error: Null field found.                               Discarding row:  9
+Error: Illegal flight time     : 	802      Discarding row: 	11
+Error: Illegal flight time     : 	194      Discarding row: 	13
+Error: Illegal flight time     : 	802      Discarding row: 	16
+Error: Illegal flight time     : 	802      Discarding row: 	18
+Error: Illegal flight time     : 	194      Discarding row: 	19
+Error: Illegal flight time     : 	572      Discarding row: 	20
+Error: Illegal flight time     : 	538      Discarding row: 	21
+Error: Disallowed character found: 	UES915*GS7,    Discarding row: 	26
+Error: Illegal flight time     : 	194      Discarding row: 	28
+Error: Illegal flight time     : 	250      Discarding row: 	30
+Error: Illegal flight time     : 	538      Discarding row: 	31
+Error: Illegal flight time     : 	278      Discarding row: 	35
+Error: Illegal flight time     : 	849      Discarding row: 	36
+Error: Disallowed character found: 	GMO593[W,      Discarding row: 	41
+Error: Illegal flight time     : 	278      Discarding row: 	44
+Error: Illegal flight time     : 	250      Discarding row: 	45
+Error: Disallowed character found: 	4QU6245R,      Discarding row: 	47
+Error: Illegal flight time     : 	572      Discarding row: 	52
+Error: Null field found.                               Discarding row:  53
+Error: Illegal flight time     : 	849      Discarding row: 	55
+Error: Illegal flight time     : 	572      Discarding row: 	56
+Error: Illegal flight time     : 	802      Discarding row: 	59
+Error: Illegal flight time     : 	184      Discarding row: 	62
+Error: Illegal flight time     : 	250      Discarding row: 	65
+Error: Illegal flight time     : 	374      Discarding row: 	70
+Error: Illegal flight time     : 	849      Discarding row: 	71
+Error: Illegal flight time     : 	278      Discarding row: 	77
+Error: Illegal flight time     : 	250      Discarding row: 	78
+Error: Illegal flight time     : 	538      Discarding row: 	79
+Error: Illegal flight time     : 	278      Discarding row: 	80
+Error: Illegal flight time     : 	250      Discarding row: 	83
+Error: Illegal flight time     : 	572      Discarding row: 	85
+Error: Illegal flight time     : 	802      Discarding row: 	87
+Error: Illegal flight time     : 	278      Discarding row: 	88
+Error: Illegal flight time     : 	572      Discarding row: 	93
+Error: Disallowed character found: 	SJD87|76RZ0,   Discarding row: 	95
+Error: Illegal flight time     : 	194      Discarding row: 	96
+Error: Illegal flight time     : 	877      Discarding row: 	97
+Error: Illegal flight time     : 	849      Discarding row: 	107
+Error: Illegal flight time     : 	849      Discarding row: 	108
+Error: Illegal flight time     : 	802      Discarding row: 	115
+Error: Illegal flight time     : 	184      Discarding row: 	119
+Error: Illegal flight time     : 	877      Discarding row: 	120
+Error: Illegal flight time     : 	538      Discarding row: 	122
+Error: Illegal flight time     : 	278      Discarding row: 	123
+Error: Illegal airport detected: 	[AS            Discarding row: 	126
+Error: Illegal flight time     : 	250      Discarding row: 	131
+Error: Illegal flight time     : 	877      Discarding row: 	133
+Error: Illegal flight time     : 	877      Discarding row: 	136
+Error: Illegal flight time     : 	184      Discarding row: 	141
+Error: Illegal flight time     : 	572      Discarding row: 	147
+Error: Illegal flight time     : 	538      Discarding row: 	148
+Error: Null field found.                               Discarding row:  154
+Error: Illegal flight time     : 	374      Discarding row: 	157
+Error: Illegal flight time     : 	802      Discarding row: 	161
+Error: Illegal flight time     : 	802      Discarding row: 	163
+Error: Illegal flight time     : 	184      Discarding row: 	164
+Error: Illegal flight time     : 	802      Discarding row: 	165
+Error: Illegal flight time     : 	250      Discarding row: 	167
+Error: Disallowed character found: 	CKZ313\BR9,    Discarding row: 	171
+Error: Illegal flight time     : 	877      Discarding row: 	175
+Error: Illegal flight time     : 	802      Discarding row: 	180
+Error: Illegal flight time     : 	184      Discarding row: 	184
+Error: Illegal flight time     : 	802      Discarding row: 	189
+Error: Illegal flight time     : 	802      Discarding row: 	190
+Error: Illegal flight time     : 	250      Discarding row: 	194
+Error: Illegal flight time     : 	374      Discarding row: 	195
+Error: Illegal flight time     : 	538      Discarding row: 	197
+Error: Illegal flight time     : 	374      Discarding row: 	200
+Error: Disallowed character found: 	A;S,           Discarding row: 	204
+Error: Illegal flight time     : 	194      Discarding row: 	206
+Error: Illegal flight time     : 	877      Discarding row: 	207
+Error: Illegal flight time     : 	374      Discarding row: 	209
+Error: Illegal flight time     : 	802      Discarding row: 	215
+Error: Illegal flight time     : 	184      Discarding row: 	219
+Error: Illegal flight time     : 	278      Discarding row: 	222
+Error: Illegal flight time     : 	538      Discarding row: 	225
+Error: Illegal flight time     : 	184      Discarding row: 	229
+Error: Illegal flight time     : 	877      Discarding row: 	232
+Error: Illegal flight time     : 	374      Discarding row: 	234
+Error: Null field found.                               Discarding row:  237
+Error: Illegal flight time     : 	374      Discarding row: 	240
+Error: Illegal flight time     : 	849      Discarding row: 	242
+Error: Illegal flight time     : 	802      Discarding row: 	249
+Error: Illegal flight time     : 	278      Discarding row: 	251
+Error: Illegal flight time     : 	250      Discarding row: 	254
+Error: Illegal flight time     : 	849      Discarding row: 	255
+Error: Illegal flight time     : 	849      Discarding row: 	261
+Error: Disallowed character found: 	VDCP164W,      Discarding row: 	262
+Error: Illegal flight time     : 	194      Discarding row: 	263
+Error: Illegal flight time     : 	194      Discarding row: 	268
+Error: Illegal flight time     : 	278      Discarding row: 	270
+Error: Illegal flight time     : 	374      Discarding row: 	273
+Error: Illegal flight time     : 	849      Discarding row: 	275
+Error: Illegal flight time     : 	877      Discarding row: 	277
+Error: Null field found.                               Discarding row:  281
+Error: Disallowed character found: 	AM%,           Discarding row: 	282
+Error: Illegal flight time     : 	278      Discarding row: 	284
+Error: Illegal flight time     : 	849      Discarding row: 	286
+Error: Illegal flight time     : 	877      Discarding row: 	287
+Error: Illegal flight time     : 	572      Discarding row: 	288
+Error: Illegal flight time     : 	278      Discarding row: 	290
+Error: Illegal flight time     : 	374      Discarding row: 	291
+Error: Illegal flight time     : 	877      Discarding row: 	297
+Error: Illegal flight time     : 	802      Discarding row: 	301
+Error: Illegal flight time     : 	194      Discarding row: 	303
+Error: Illegal airport detected: 	:IN            Discarding row: 	304
+Error: Illegal flight time     : 	250      Discarding row: 	306
+Error: Illegal flight time     : 	877      Discarding row: 	310
+Error: Illegal flight time     : 	849      Discarding row: 	311
+Error: Illegal flight time     : 	184      Discarding row: 	312
+Error: Illegal flight time     : 	250      Discarding row: 	313
+Error: Illegal flight time     : 	250      Discarding row: 	324
+Error: Null field found.                               Discarding row:  327
+Error: Illegal flight time     : 	250      Discarding row: 	330
+Error: Illegal flight time     : 	538      Discarding row: 	331
+Error: Illegal flight time     : 	250      Discarding row: 	332
+Error: Illegal flight time     : 	572      Discarding row: 	335
+Error: Illegal airport detected: 	#MS            Discarding row: 	338
+Error: Illegal flight time     : 	849      Discarding row: 	340
+Error: Illegal flight time     : 	877      Discarding row: 	343
+Error: Illegal flight time     : 	802      Discarding row: 	345
+Error: Illegal flight time     : 	572      Discarding row: 	346
+Error: Illegal flight time     : 	572      Discarding row: 	347
+Error: Illegal flight time     : 	572      Discarding row: 	348
+Error: Illegal flight time     : 	184      Discarding row: 	353
+Error: Illegal flight time     : 	194      Discarding row: 	358
+Error: Illegal flight time     : 	278      Discarding row: 	360
+Error: Disallowed character found: 	WBE6935NU$,    Discarding row: 	361
+Error: Disallowed character found: 	WYu2011YH2,    Discarding row: 	362
+Error: Illegal flight time     : 	278      Discarding row: 	363
+Error: Illegal flight time     : 	802      Discarding row: 	368
+Error: Illegal airport detected: 	MI^            Discarding row: 	371
+Error: Illegal airport detected: 	vAS            Discarding row: 	373
+Error: Illegal flight time     : 	194      Discarding row: 	378
+Error: Illegal flight time     : 	802      Discarding row: 	379
+Error: Illegal flight time     : 	802      Discarding row: 	380
+Error: Illegal flight time     : 	374      Discarding row: 	381
+Error: Disallowed character found: 	OR8,           Discarding row: 	382
+Error: Null field found.                               Discarding row:  385
+Error: Illegal flight time     : 	538      Discarding row: 	386
+Error: Illegal airport detected: 	SI|            Discarding row: 	387
+Error: Illegal flight time     : 	278      Discarding row: 	388
+Error: Illegal flight time     : 	849      Discarding row: 	389
+Error: Illegal flight time     : 	572      Discarding row: 	394
+Error: Illegal flight time     : 	538      Discarding row: 	395
+Error: Illegal flight time     : 	538      Discarding row: 	397
+Error: Illegal flight time     : 	802      Discarding row: 	399
+Error: Illegal flight time     : 	374      Discarding row: 	400
+Error: Illegal flight time     : 	194      Discarding row: 	405
+Error: Illegal flight time     : 	194      Discarding row: 	407
+Error: Illegal flight time     : 	278      Discarding row: 	408
+Error: Illegal flight time     : 	802      Discarding row: 	409
+Error: Illegal flight time     : 	849      Discarding row: 	410
+Error: Illegal flight time     : 	802      Discarding row: 	413
+Error: Illegal flight time     : 	877      Discarding row: 	416
+Error: Illegal flight time     : 	278      Discarding row: 	418
+Error: Illegal flight time     : 	278      Discarding row: 	421
+Error: Illegal flight time     : 	250      Discarding row: 	426
+Error: Illegal airport detected: 	L}X            Discarding row: 	432
+Error: Illegal flight time     : 	849      Discarding row: 	437
+Error: Disallowed character found: 	PEe,           Discarding row: 	441
+Error: Illegal flight time     : 	572      Discarding row: 	444
+Error: Illegal flight time     : 	278      Discarding row: 	445
+Error: Illegal flight time     : 	374      Discarding row: 	446
+Error: Illegal flight time     : 	572      Discarding row: 	447
+Error: Null field found.                               Discarding row:  453
+Error: Illegal flight time     : 	278      Discarding row: 	454
+Error: Illegal flight time     : 	278      Discarding row: 	456
+Error: Illegal flight time     : 	194      Discarding row: 	458
+Error: Disallowed character found: 	~AN,           Discarding row:	461
+Error: Illegal flight time     : 	184      Discarding row: 	467
+Error: Illegal flight time     : 	877      Discarding row: 	470
+Error: Illegal flight time     : 	877      Discarding row: 	476
+Error: Illegal flight time     : 	374      Discarding row: 	479
+Error: Illegal flight time     : 	802      Discarding row: 	486
+Error: Illegal flight time     : 	572      Discarding row: 	491
+Error: Illegal airport detected: 	yEK            Discarding row: 	494
+Error: Illegal flight time     : 	184      Discarding row: 	496
+Error: Null field found.                               Discarding row:  498
+Error: Illegal flight time     : 	184      Discarding row: 	499
+Error: Null field found.                               Discarding row:  500
+Error: Illegal flight time     : 	194      Discarding row: 	502
+Error: Illegal flight time     : 	802      Discarding row: 	508
+Error: Illegal flight time     : 	278      Discarding row: 	509
+Error: Null field found.                               Discarding row:  510
